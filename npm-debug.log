@@ -1,0 +1,1480 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install' ]
+2 info using npm@1.2.17
+3 info using node@v0.10.3
+4 verbose read json /Users/iamceo/github/sails-base/test/package.json
+5 verbose readDependencies using package.json deps
+6 verbose install where, deps [ '/Users/iamceo/github/sails-base/test',
+6 verbose install   [ 'sails', 'grunt', 'sails-disk', 'ejs', 'optimist' ] ]
+7 verbose from cache /Users/iamceo/github/sails-base/test/package.json
+8 info preinstall test@0.0.0
+9 verbose read json /Users/iamceo/github/sails-base/test/node_modules/ejs/package.json
+10 verbose read json /Users/iamceo/github/sails-base/test/node_modules/grunt/package.json
+11 verbose read json /Users/iamceo/github/sails-base/test/node_modules/optimist/package.json
+12 verbose read json /Users/iamceo/github/sails-base/test/node_modules/sails-disk/package.json
+13 verbose from cache /Users/iamceo/github/sails-base/test/package.json
+14 verbose readDependencies using package.json deps
+15 verbose from cache /Users/iamceo/github/sails-base/test/node_modules/ejs/package.json
+16 verbose from cache /Users/iamceo/github/sails-base/test/node_modules/grunt/package.json
+17 verbose from cache /Users/iamceo/github/sails-base/test/node_modules/optimist/package.json
+18 verbose from cache /Users/iamceo/github/sails-base/test/node_modules/sails-disk/package.json
+19 verbose cache add [ 'sails@0.9.7', null ]
+20 verbose cache add name=undefined spec="sails@0.9.7" args=["sails@0.9.7",null]
+21 verbose parsed url { protocol: null,
+21 verbose parsed url   slashes: null,
+21 verbose parsed url   auth: null,
+21 verbose parsed url   host: null,
+21 verbose parsed url   port: null,
+21 verbose parsed url   hostname: null,
+21 verbose parsed url   hash: null,
+21 verbose parsed url   search: null,
+21 verbose parsed url   query: null,
+21 verbose parsed url   pathname: 'sails@0.9.7',
+21 verbose parsed url   path: 'sails@0.9.7',
+21 verbose parsed url   href: 'sails@0.9.7' }
+22 verbose cache add name="sails" spec="0.9.7" args=["sails","0.9.7"]
+23 verbose parsed url { protocol: null,
+23 verbose parsed url   slashes: null,
+23 verbose parsed url   auth: null,
+23 verbose parsed url   host: null,
+23 verbose parsed url   port: null,
+23 verbose parsed url   hostname: null,
+23 verbose parsed url   hash: null,
+23 verbose parsed url   search: null,
+23 verbose parsed url   query: null,
+23 verbose parsed url   pathname: '0.9.7',
+23 verbose parsed url   path: '0.9.7',
+23 verbose parsed url   href: '0.9.7' }
+24 verbose addNamed [ 'sails', '0.9.7' ]
+25 verbose addNamed [ '0.9.7', '0.9.7' ]
+26 verbose already installed skipping grunt@0.4.1 /Users/iamceo/github/sails-base/test
+27 verbose already installed skipping ejs@0.8.4 /Users/iamceo/github/sails-base/test
+28 verbose already installed skipping sails-disk@~0.9.0 /Users/iamceo/github/sails-base/test
+29 verbose already installed skipping optimist@0.3.4 /Users/iamceo/github/sails-base/test
+30 silly lockFile c722eced-sails-0-9-7 sails@0.9.7
+31 verbose lock sails@0.9.7 /Users/iamceo/.npm/c722eced-sails-0-9-7.lock
+32 verbose url raw sails/0.9.7
+33 verbose url resolving [ 'https://registry.npmjs.org/', './sails/0.9.7' ]
+34 verbose url resolved https://registry.npmjs.org/sails/0.9.7
+35 info trying registry request attempt 1 at 19:37:18
+36 verbose etag "3C5BNC8E9VIUNZXZW8HO164EV"
+37 http GET https://registry.npmjs.org/sails/0.9.7
+38 http 304 https://registry.npmjs.org/sails/0.9.7
+39 silly registry.get cb [ 304,
+39 silly registry.get   { server: 'CouchDB/1.3.1 (Erlang OTP/R15B03)',
+39 silly registry.get     etag: '"3C5BNC8E9VIUNZXZW8HO164EV"',
+39 silly registry.get     date: 'Tue, 22 Oct 2013 02:37:18 GMT',
+39 silly registry.get     'content-length': '0' } ]
+40 verbose etag sails/0.9.7 from cache
+41 verbose read json /Users/iamceo/.npm/sails/0.9.7/package/package.json
+42 silly lockFile c722eced-sails-0-9-7 sails@0.9.7
+43 silly lockFile c722eced-sails-0-9-7 sails@0.9.7
+44 silly resolved [ { name: 'sails',
+44 silly resolved     author: { name: 'Mike McNeil', email: 'mike@balderdash.co' },
+44 silly resolved     version: '0.9.7',
+44 silly resolved     description: 'API-driven framework for building realtime apps, using MVC conventions (based on Express and Socket.io)',
+44 silly resolved     homepage: 'http://sailsjs.com',
+44 silly resolved     keywords:
+44 silly resolved      [ 'mvc',
+44 silly resolved        'web-framework',
+44 silly resolved        'express',
+44 silly resolved        'sails',
+44 silly resolved        'sailsjs',
+44 silly resolved        'sails.js',
+44 silly resolved        'REST',
+44 silly resolved        'API',
+44 silly resolved        'orm',
+44 silly resolved        'socket.io' ],
+44 silly resolved     main: './lib/index',
+44 silly resolved     bin: { sails: './bin/sails.js' },
+44 silly resolved     scripts: { test: 'mocha' },
+44 silly resolved     directories: { lib: 'lib' },
+44 silly resolved     dependencies:
+44 silly resolved      { waterline: '~0.9.4',
+44 silly resolved        'sails-disk': '~0.9.0',
+44 silly resolved        express: '3.4.0',
+44 silly resolved        'socket.io': '0.9.14',
+44 silly resolved        'connect-redis': '1.4.5',
+44 silly resolved        'connect-mongo': '0.3.2',
+44 silly resolved        async: '0.2.9',
+44 silly resolved        winston: '0.7.1',
+44 silly resolved        i18n: '0.4.1',
+44 silly resolved        optimist: '0.3.4',
+44 silly resolved        'fs-extra': '0.5.0',
+44 silly resolved        lodash: '1.2.1',
+44 silly resolved        glob: '3.1.14',
+44 silly resolved        'underscore.string': '2.3.0',
+44 silly resolved        'include-all': '0.1.2',
+44 silly resolved        inflection: '1.2.5',
+44 silly resolved        'node-uuid': '1.4.0',
+44 silly resolved        grunt: '0.4.1',
+44 silly resolved        'grunt-cli': '0.1.9',
+44 silly resolved        'grunt-contrib-copy': '0.4.1',
+44 silly resolved        'grunt-contrib-clean': '0.4.1',
+44 silly resolved        'grunt-contrib-concat': '0.3.0',
+44 silly resolved        'grunt-sails-linker': 'git://github.com/Zolmeister/grunt-sails-linker.git',
+44 silly resolved        'grunt-contrib-jst': '0.5.0',
+44 silly resolved        'grunt-contrib-watch': '0.4.4',
+44 silly resolved        'grunt-contrib-uglify': '0.2.2',
+44 silly resolved        'grunt-contrib-cssmin': '0.6.1',
+44 silly resolved        'grunt-contrib-less': '0.5.2',
+44 silly resolved        'grunt-contrib-coffee': '~0.7.0',
+44 silly resolved        ejs: '0.8.4',
+44 silly resolved        'ejs-locals': '1.0.2',
+44 silly resolved        'connect-flash': '0.1.1',
+44 silly resolved        pluralize: '0.0.5',
+44 silly resolved        'coffee-script': '1.6.2' },
+44 silly resolved     devDependencies: { mocha: '*', request: '*', wrench: '~1.5.1' },
+44 silly resolved     optionalDependencies: { 'coffee-script': '1.6.2' },
+44 silly resolved     repository: { type: 'git', url: 'git://github.com/balderdashy/sails.git' },
+44 silly resolved     licenses: [ [Object] ],
+44 silly resolved     bugs: { url: 'http://github.com/balderdashy/sails/issues' },
+44 silly resolved     engines: { node: '>= 0.10.0' },
+44 silly resolved     readme: '# Sails.js [![Build Status](https://travis-ci.org/balderdashy/sails.png?branch=master)](https://travis-ci.org/balderdashy/sails) [![NPM version](https://badge.fury.io/js/sails.png)](http://badge.fury.io/js/sails)\n\n![image_squidhome@2x.png](http://i.imgur.com/RIvu9.png)\n\nSails.js makes it easy to build custom, enterprise-grade Node.js apps. It is designed to resemble the MVC architecture from frameworks like Ruby on Rails, but with support for the more modern, data-oriented style of web app development.  It\'s especially good for building realtime features like chat.\n\n# Intro to Sails.js\n<a href="http://net.tutsplus.com/tutorials/javascript-ajax/working-with-data-in-sails-js/">Nettuts+ Working With Data in Sails.js</a>  \n[![ScreenShot](http://balderdashy.github.com/sails/images/screenshot.png)](http://youtu.be/GK-tFvpIR7c)\n\n# Installation\n\nTo install the latest stable release with the command-line tool:\n```sh\nsudo npm -g install sails\n```\n\n\n# Creating a New Sails Project\n\nCreate a new app\n```sh\n# Create the app\nsails new testProject\n```\n\nLift Sails\n```sh\n# cd into the new folder\ncd testProject\n\n# Fire up the server  \nsails lift\n```\n\nThe default port for Sails is 1337.  At this point if you visit <a href="http://localhost:1337/">http://localhost:1337/</a> You will see the default home page.  \n\nNow, let\'s get Sails to do cool stuff.\n\n# Hello, Sails!\n\nTo get Sails to say "Hello World!", you need only to change the view for the default home page in `views/home/index.ejs`.  But that doesn\'t really teach us a whole lot-- instead, let\'s create a new controller and have IT tell us hello.\n\n```sh\nsails generate controller hello index\n```\n\nThis will generate a file called `HelloController.js` in your app\'s `api/controllers` directory with one action, `index()`.\n\nNow let\'s edit that action to send back the string `\'Hello World!\'`.\n\n```javascript\n\nvar HelloController = {\n\n    index: function(req, res) {\n  \tres.send(\'Hello World!\');\n\t}\n}\n\nmodule.exports = HelloController;\n```\n\n\nLet\'s say we want the application to display this hello response when a request comes in for `http://localhost:1337/hi`. \nGo into the **/config/routes.js** file. Here you can manually define these mappings as you like. Change the file to look like this.\n\n```javascript\nvar routes = {\n\t\'/hi\': {\n\t\tcontroller: \'hello\',\n\t\taction: \'index\'\n\t}\n}\n\nmodule.exports = routes;\n```\n\nFinally, restart the server by going to your node terminal and pressing control+c. Then enter the\nfollowing.\n\n```sh\nsails lift\n```\n\nNow when you visit <a href="http://localhost:1337/">http://localhost:1337/hi</a> your browser will say **\'Hello World!\'**.\n\n> ### Notes:\n> We could have omitted `action: \'index\'`, since it\'s the default, but I left it in for clarity.\n\n> As you will see when working more with Sails.js, one great feature is that by default, you do not **have**\nto define routes for controller actions. Sails.js will do its best to understand what you\'re talking about.  \nFor instance, if you were to visit http://localhost:1337/hello, you\'d notice that it routes you to the index action of `HelloController`.\n\n> Finally, if you were to omit HelloController altogether, but included a view in `views/hello/index.ejs`, Sails.js will serve that view when you visit `/hello`.\n\n> You can learn more about that on the <a href="https://github.com/balderdashy/sails/wiki/Routes">Routes</a> section of this wiki.\n\n\n# Creating an API\nCreating a RESTful JSON API is very easy with the command line tool. You can define a model with attributes by adding arguments at the end of the command. To generate a User model and empty controller, enter the following:\n\n```\nsails generate user\n```\n\nIf you check out your app, you\'ll notice that this created a file at **/api/models/User.js** and **/api/controllers/UserController.js**.  \n\n\nSails API blueprints are more than scaffolds. Generating HTML doesn\'t really make sense for \nmodern web apps. Instead, Sails automatically builds a RESTful JSON API for your models.\nMost importantly, this API supports HTTP _and_ WebSockets. By default for every model and controller you generate, you get the basic CRUD operations automatically.  \nIf you need more fine-grained control, you can just override the appropriate method in the controller.  (see the documentation for more information on how to do this)  Controllers are just Express middleware, the most popular framework for writing code in Node.js.  And most importantly, all of that code, even the custom controller, still supports WebSocekts out of the box.\n\nFor instance, after generating the User above, if you POST to `http://localhost:1337/user` or visit `http://localhost:1337/user/create`, you\'ll see:\n```json\n{\n  "createdAt": "2013-01-10T01:33:19.105Z",\n  "updatedAt": "2013-01-10T01:33:19.105Z",\n  "id": 1\n}\n```\n\nThat\'s it!  You just created a model in the database!  You can also `find`, `update`, and `destroy` users:\n\n```bash\n# List of all users\nhttp://localhost:1337/user\n\n# Find the user with id 1\nhttp://localhost:1337/user/1\n\n# Create a new user\nhttp://localhost:1337/user/create?name=Fisslewick\n(or send an HTTP POST to http://localhost:1337/user)\n\n# Update the name of the user with id 1\nhttp://localhost:1337/user/update/1?name=Gordo\n(or send an HTTP PUT to http://localhost:1337/user/1)\n\n# Destroy the user with id 1\nhttp://localhost:1337/user/destroy/1\n(or send an HTTP DELETE to http://localhost:1337/user/1)\n```\n\n\nOne last thing to note-- `findAll` automatically supports search, limit, skip (pagination), sorting, startsWith, endsWith, contains, greaterThan, lessThan, and not filtering.\n\n\n## Additional Features\nSails does a few things other Node.js MVC frameworks can\'t do:\n- Automatically generated JSON API for manipulating models means you don\'t have to write any backend code to build simple database apps\n- Built-in authentication, role-based access control, and customizable policies assignable at the controller/action level\n- Transport agnostic routing: Sails controllers also handle Socket.io / WebSocket messages!  This makes it much easier to send the server-originated or \'comet\' notifications you need for features like chat, realtime analytics, and multiplayer games.\n- Automatic asset minification: Your UI code is automatically included in development mode, and minified into a simple, gzipped file in production.  Also supports LESS and CoffeeScript.\n\n\nTo learn more, check out the documentation here: \nhttps://github.com/balderdashy/sails/wiki/_pages\n\nJoin us on IRC at #sailsjs on freenode\n\n\nVersion, Dependencies and Compatibility\n--\n#### Latest stable release: `v0.9.4`\n\nTested with node v0.8.22 and v0.10.x\nSails is built on the rock-solid foundations of ExpressJS and Socket.io.  \n\n### [Roadmap](https://github.com/balderdashy/sails-wiki/blob/0.9/roadmap.md)\n### [Changelog](https://github.com/balderdashy/sails-wiki/blob/0.9/changelog.md)\n\n<br/>\n<br/>\n\n![icon_circleheart@2x.png](http://i.imgur.com/liHPV.png)\n\n## Who Built This?\n\nThe Sails framework was developed by Mike McNeil (@mikermcneil) and is maintained by Balderdash (@balderdashy), a realtime web & mobile studio I started with Heather White (@hdesignsit) in Austin, TX.\n\nAfter building a few realtime javascript apps and taking them into production, we realized that the  JavaScript development landscape is very much still the Wild West.  Over time, after trying lots of different methodologies (on the front end and the back), we decided to crystallize all of our best practices into this framework.  I hope it saves you some time :)\n\n\n\n\n\n\n\n![icon_circlelightbulb@2x.png](http://i.imgur.com/eOFXn.png)  \n\nLicense\n--\n\nSails is built around so many great open-source technologies that it would never have crossed our minds to keep it proprietary.  We owe huge gratitude and props to TJ Holowaychuk (@visionmedia) and Guillermo Rauch (@guille) for the work they did, as well as the stewards of all the other open-source modules we use.  Sails could never have been developed without your tremendous contributions to the node community.\n\n\nThe MIT License (MIT)\n--\n\nCopyright © 2012-2013 Mike McNeil\n\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n\n[![githalytics.com alpha](https://cruel-carlota.pagodabox.com/8acf2fc2ca0aca8a3018e355ad776ed7 "githalytics.com")](http://githalytics.com/balderdashy/sails)\n',
+44 silly resolved     readmeFilename: 'README.md',
+44 silly resolved     _id: 'sails@0.9.7',
+44 silly resolved     _from: 'sails@0.9.7' } ]
+45 info install sails@0.9.7 into /Users/iamceo/github/sails-base/test
+46 info installOne sails@0.9.7
+47 verbose from cache /Users/iamceo/.npm/sails/0.9.7/package/package.json
+48 info /Users/iamceo/github/sails-base/test/node_modules/sails unbuild
+49 verbose read json /Users/iamceo/github/sails-base/test/node_modules/sails/package.json
+50 verbose tar unpack /Users/iamceo/.npm/sails/0.9.7/package.tgz
+51 silly lockFile 57c139df-ils-base-test-node-modules-sails /Users/iamceo/github/sails-base/test/node_modules/sails
+52 verbose lock /Users/iamceo/github/sails-base/test/node_modules/sails /Users/iamceo/.npm/57c139df-ils-base-test-node-modules-sails.lock
+53 silly lockFile 26280df7-mceo-npm-sails-0-9-7-package-tgz /Users/iamceo/.npm/sails/0.9.7/package.tgz
+54 verbose lock /Users/iamceo/.npm/sails/0.9.7/package.tgz /Users/iamceo/.npm/26280df7-mceo-npm-sails-0-9-7-package-tgz.lock
+55 silly gunzTarPerm modes [ '755', '644' ]
+56 silly gunzTarPerm extractEntry package.json
+57 silly gunzTarPerm extractEntry .npmignore
+58 silly gunzTarPerm extractEntry README.md
+59 silly gunzTarPerm extractEntry CONTRIBUTING.md
+60 silly gunzTarPerm extractEntry CONTRIBUTORS
+61 silly gunzTarPerm extractEntry .travis.yml
+62 silly gunzTarPerm extractEntry test/README.md
+63 silly gunzTarPerm extractEntry test/cli/integration/generate.test.js
+64 silly gunzTarPerm extractEntry test/cli/integration/lift.test.js
+65 silly gunzTarPerm extractEntry test/cli/integration/new.test.js
+66 silly gunzTarPerm extractEntry test/config/integration/load.test.js
+67 silly gunzTarPerm extractEntry test/config/integration/fixtures/config/adapters.js
+68 silly gunzTarPerm extractEntry test/config/integration/fixtures/config/controllers.js
+69 silly gunzTarPerm extractEntry test/config/integration/fixtures/config/local.ex.js
+70 silly gunzTarPerm extractEntry test/config/integration/fixtures/config/local.js
+71 silly gunzTarPerm extractEntry test/config/integration/fixtures/config/bootstrap.js
+72 silly gunzTarPerm extractEntry test/config/integration/fixtures/config/log.js
+73 silly gunzTarPerm extractEntry test/config/integration/fixtures/config/policies.js
+74 silly gunzTarPerm extractEntry test/config/integration/fixtures/config/routes.js
+75 silly gunzTarPerm extractEntry test/config/integration/fixtures/config/session.js
+76 silly gunzTarPerm extractEntry test/config/integration/fixtures/config/sockets.js
+77 silly gunzTarPerm extractEntry test/config/integration/fixtures/config/application.js
+78 silly gunzTarPerm extractEntry test/config/integration/fixtures/config/views.js
+79 silly gunzTarPerm extractEntry test/config/integration/fixtures/config/locales/en.json
+80 silly gunzTarPerm extractEntry test/config/integration/helpers/appHelper.js
+81 silly gunzTarPerm extractEntry test/mocha.opts
+82 silly gunzTarPerm extractEntry test/router/integration/policies.test.js
+83 silly gunzTarPerm extractEntry test/router/integration/router.APIScaffold.test.js
+84 silly gunzTarPerm extractEntry test/router/integration/router.defaultController.test.js
+85 silly gunzTarPerm extractEntry test/router/integration/router.specifiedRoutes.test.js
+86 silly gunzTarPerm extractEntry test/router/integration/router.viewRendering.test.js
+87 silly gunzTarPerm extractEntry test/router/integration/fixtures/api/controllers/EmptyController.js
+88 silly gunzTarPerm extractEntry test/router/integration/fixtures/api/controllers/TestController.js
+89 silly gunzTarPerm extractEntry test/router/integration/fixtures/api/controllers/ViewTestController.js
+90 silly gunzTarPerm extractEntry test/router/integration/fixtures/api/models/Empty.js
+91 silly gunzTarPerm extractEntry test/router/integration/fixtures/api/policies/error_policy.js
+92 silly gunzTarPerm extractEntry test/router/integration/fixtures/api/policies/fake_auth.js
+93 silly gunzTarPerm extractEntry test/router/integration/fixtures/views/viewTest/create.ejs
+94 silly gunzTarPerm extractEntry test/router/integration/fixtures/views/viewTest/index.ejs
+95 silly gunzTarPerm extractEntry test/router/integration/helpers/appHelper.js
+96 silly gunzTarPerm extractEntry test/router/integration/helpers/httpHelper.js
+97 silly gunzTarPerm extractEntry test/router/unit/routes.test.js
+98 silly gunzTarPerm extractEntry test/router/unit/helpers/sailsHelper.js
+99 silly gunzTarPerm extractEntry bin/generate.js
+100 silly gunzTarPerm extractEntry bin/lift.js
+101 silly gunzTarPerm extractEntry bin/new.js
+102 silly gunzTarPerm extractEntry bin/sails.js
+103 silly gunzTarPerm extractEntry bin/turtleship.js
+104 silly gunzTarPerm extractEntry bin/utils.js
+105 silly gunzTarPerm extractEntry bin/boilerplates/app.js
+106 silly gunzTarPerm extractEntry bin/boilerplates/Gruntfile.js
+107 silly gunzTarPerm extractEntry bin/boilerplates/gitignore
+108 silly gunzTarPerm extractEntry bin/boilerplates/.gitkeep
+109 silly gunzTarPerm extractEntry bin/boilerplates/assets/favicon.ico
+110 silly gunzTarPerm extractEntry bin/boilerplates/assets/images/.gitkeep
+111 silly gunzTarPerm extractEntry bin/boilerplates/assets/js/app.js
+112 silly gunzTarPerm extractEntry bin/boilerplates/assets/js/sails.io.js
+113 silly gunzTarPerm extractEntry bin/boilerplates/assets/js/socket.io.js
+114 silly gunzTarPerm extractEntry bin/boilerplates/assets/js/.gitkeep
+115 silly gunzTarPerm extractEntry bin/boilerplates/assets/robots.txt
+116 silly gunzTarPerm extractEntry bin/boilerplates/assets/styles/.gitkeep
+117 silly gunzTarPerm extractEntry bin/boilerplates/config/400.js
+118 silly gunzTarPerm extractEntry bin/boilerplates/config/bootstrap.js
+119 silly gunzTarPerm extractEntry bin/boilerplates/config/controllers.js
+120 silly gunzTarPerm extractEntry bin/boilerplates/config/cors.js
+121 silly gunzTarPerm extractEntry bin/boilerplates/config/adapters.js
+122 silly gunzTarPerm extractEntry bin/boilerplates/config/403.js
+123 silly gunzTarPerm extractEntry bin/boilerplates/config/local.js
+124 silly gunzTarPerm extractEntry bin/boilerplates/config/sockets.js
+125 silly gunzTarPerm extractEntry bin/boilerplates/config/log.js
+126 silly gunzTarPerm extractEntry bin/boilerplates/config/policies.js
+127 silly gunzTarPerm extractEntry bin/boilerplates/config/500.js
+128 silly gunzTarPerm extractEntry bin/boilerplates/config/routes.js
+129 silly gunzTarPerm extractEntry bin/boilerplates/config/404.js
+130 silly gunzTarPerm extractEntry bin/boilerplates/config/session.js
+131 silly gunzTarPerm extractEntry bin/boilerplates/config/csrf.js
+132 silly gunzTarPerm extractEntry bin/boilerplates/config/views.js
+133 silly gunzTarPerm extractEntry bin/boilerplates/config/i18n.js
+134 silly gunzTarPerm extractEntry bin/boilerplates/config/locales/_README.md
+135 silly gunzTarPerm extractEntry bin/boilerplates/config/locales/de.json
+136 silly gunzTarPerm extractEntry bin/boilerplates/config/locales/en.json
+137 silly gunzTarPerm extractEntry bin/boilerplates/config/locales/es.json
+138 silly gunzTarPerm extractEntry bin/boilerplates/config/locales/fr.json
+139 silly gunzTarPerm extractEntry bin/boilerplates/api/adapters/.gitkeep
+140 silly gunzTarPerm extractEntry bin/boilerplates/api/controllers/.gitkeep
+141 silly gunzTarPerm extractEntry bin/boilerplates/api/models/.gitkeep
+142 silly gunzTarPerm extractEntry bin/boilerplates/api/policies/isAuthenticated.js
+143 silly gunzTarPerm extractEntry bin/boilerplates/api/services/.gitkeep
+144 silly gunzTarPerm extractEntry bin/boilerplates/layout.css
+145 silly gunzTarPerm extractEntry bin/boilerplates/linkerAssets/favicon.ico
+146 silly gunzTarPerm extractEntry bin/boilerplates/linkerAssets/images/.gitkeep
+147 silly gunzTarPerm extractEntry bin/boilerplates/linkerAssets/linker/js/app.js
+148 silly gunzTarPerm extractEntry bin/boilerplates/linkerAssets/linker/js/sails.io.js
+149 silly gunzTarPerm extractEntry bin/boilerplates/linkerAssets/linker/js/socket.io.js
+150 silly gunzTarPerm extractEntry bin/boilerplates/linkerAssets/linker/js/.gitkeep
+151 silly gunzTarPerm extractEntry bin/boilerplates/linkerAssets/linker/styles/.gitkeep
+152 silly gunzTarPerm extractEntry bin/boilerplates/linkerAssets/linker/templates/.gitkeep
+153 silly gunzTarPerm extractEntry bin/boilerplates/linkerAssets/robots.txt
+154 silly gunzTarPerm extractEntry bin/boilerplates/linkerLayouts/ejs/layout.ejs
+155 silly gunzTarPerm extractEntry bin/boilerplates/linkerLayouts/hbs/layout.hbs
+156 silly gunzTarPerm extractEntry bin/boilerplates/linkerLayouts/jade/layout.jade
+157 silly gunzTarPerm extractEntry bin/boilerplates/templates/action.ejs
+158 silly gunzTarPerm extractEntry bin/boilerplates/templates/adapter.ejs
+159 silly gunzTarPerm extractEntry bin/boilerplates/templates/attribute.ejs
+160 silly gunzTarPerm extractEntry bin/boilerplates/templates/controller.ejs
+161 silly gunzTarPerm extractEntry bin/boilerplates/templates/federatedAction.ejs
+162 silly gunzTarPerm extractEntry bin/boilerplates/templates/model.ejs
+163 silly gunzTarPerm extractEntry bin/boilerplates/templates/view.ejs
+164 silly gunzTarPerm extractEntry bin/boilerplates/views/ejs/403.ejs
+165 silly gunzTarPerm extractEntry bin/boilerplates/views/ejs/404.ejs
+166 silly gunzTarPerm extractEntry bin/boilerplates/views/ejs/500.ejs
+167 silly gunzTarPerm extractEntry bin/boilerplates/views/ejs/home/index.ejs
+168 silly gunzTarPerm extractEntry bin/boilerplates/views/ejs/layout.ejs
+169 silly gunzTarPerm extractEntry bin/boilerplates/views/hbs/404.hbs
+170 silly gunzTarPerm extractEntry bin/boilerplates/views/hbs/500.hbs
+171 silly gunzTarPerm extractEntry bin/boilerplates/views/hbs/home/index.hbs
+172 silly gunzTarPerm extractEntry bin/boilerplates/views/hbs/layout.hbs
+173 silly gunzTarPerm extractEntry bin/boilerplates/views/jade/403.jade
+174 silly gunzTarPerm extractEntry bin/boilerplates/views/jade/404.jade
+175 silly gunzTarPerm extractEntry bin/boilerplates/views/jade/500.jade
+176 silly gunzTarPerm extractEntry bin/boilerplates/views/jade/home/index.jade
+177 silly gunzTarPerm extractEntry bin/boilerplates/views/jade/layout.jade
+178 silly gunzTarPerm extractEntry lib/logger.js
+179 silly gunzTarPerm extractEntry lib/index.js
+180 silly gunzTarPerm extractEntry lib/sails.js
+181 silly gunzTarPerm extractEntry lib/express/bodyParserRetry.js
+182 silly gunzTarPerm extractEntry lib/express/extractRouteOpts.js
+183 silly gunzTarPerm extractEntry lib/express/index.js
+184 silly gunzTarPerm extractEntry lib/express/start.js
+185 silly gunzTarPerm extractEntry lib/express/view.js
+186 silly gunzTarPerm extractEntry lib/grunt/index.js
+187 silly gunzTarPerm extractEntry lib/hooks/README.md
+188 silly gunzTarPerm extractEntry lib/hooks/index.js
+189 silly gunzTarPerm extractEntry lib/hooks/orm/index.js
+190 silly gunzTarPerm extractEntry lib/hooks/orm/loadUserModules.js
+191 silly gunzTarPerm extractEntry lib/hooks/cors/index.js
+192 silly gunzTarPerm extractEntry lib/hooks/http/index.js
+193 silly gunzTarPerm extractEntry lib/hooks/i18n/index.js
+194 silly gunzTarPerm extractEntry lib/hooks/controllers/controller.create.js
+195 silly gunzTarPerm extractEntry lib/hooks/controllers/controller.destroy.js
+196 silly gunzTarPerm extractEntry lib/hooks/controllers/controller.find.js
+197 silly gunzTarPerm extractEntry lib/hooks/controllers/controller.update.js
+198 silly gunzTarPerm extractEntry lib/hooks/controllers/index.js
+199 silly gunzTarPerm extractEntry lib/hooks/controllers/helpers/id.js
+200 silly gunzTarPerm extractEntry lib/hooks/controllers/legacyBlueprints/grunt.js
+201 silly gunzTarPerm extractEntry lib/hooks/csrf/index.js
+202 silly gunzTarPerm extractEntry lib/hooks/policies/index.js
+203 silly gunzTarPerm extractEntry lib/hooks/pubsub/index.js
+204 silly gunzTarPerm extractEntry lib/hooks/request/index.js
+205 silly gunzTarPerm extractEntry lib/hooks/sockets/authorization.js
+206 silly gunzTarPerm extractEntry lib/hooks/sockets/configure.js
+207 silly gunzTarPerm extractEntry lib/hooks/sockets/connection.js
+208 silly gunzTarPerm extractEntry lib/hooks/sockets/index.js
+209 silly gunzTarPerm extractEntry lib/hooks/sockets/interpreter/ResStream.js
+210 silly gunzTarPerm extractEntry lib/hooks/sockets/interpreter/getVerb.js
+211 silly gunzTarPerm extractEntry lib/hooks/sockets/interpreter/interpret.js
+212 silly gunzTarPerm extractEntry lib/hooks/sockets/test/route.test.js
+213 silly gunzTarPerm extractEntry lib/hooks/views/index.js
+214 silly gunzTarPerm extractEntry lib/app/bootstrap.js
+215 silly gunzTarPerm extractEntry lib/app/exposeGlobals.js
+216 silly gunzTarPerm extractEntry lib/app/index.js
+217 silly gunzTarPerm extractEntry lib/app/load.js
+218 silly gunzTarPerm extractEntry lib/app/teardown.js
+219 silly gunzTarPerm extractEntry lib/configuration/consolidate.js
+220 silly gunzTarPerm extractEntry lib/configuration/defaults.js
+221 silly gunzTarPerm extractEntry lib/configuration/index.js
+222 silly gunzTarPerm extractEntry lib/configuration/load.js
+223 silly gunzTarPerm extractEntry lib/configuration/package.js
+224 silly gunzTarPerm extractEntry lib/configuration/validate.js
+225 silly gunzTarPerm extractEntry lib/middleware/index.js
+226 silly gunzTarPerm extractEntry lib/moduleloader/buildDictionary.js
+227 silly gunzTarPerm extractEntry lib/moduleloader/errors.js
+228 silly gunzTarPerm extractEntry lib/moduleloader/index.js
+229 silly gunzTarPerm extractEntry lib/router/bind.js
+230 silly gunzTarPerm extractEntry lib/router/index.js
+231 silly gunzTarPerm extractEntry lib/errors/fatal.js
+232 silly gunzTarPerm extractEntry lib/session/index.js
+233 silly gunzTarPerm extractEntry lib/util/index.js
+234 silly gunzTarPerm extractEntry CHANGELOG.md
+235 silly gunzTarPerm extractEntry LICENSE.md
+236 verbose read json /Users/iamceo/github/sails-base/test/node_modules/sails/package.json
+237 silly lockFile 57c139df-ils-base-test-node-modules-sails /Users/iamceo/github/sails-base/test/node_modules/sails
+238 silly lockFile 57c139df-ils-base-test-node-modules-sails /Users/iamceo/github/sails-base/test/node_modules/sails
+239 silly lockFile 26280df7-mceo-npm-sails-0-9-7-package-tgz /Users/iamceo/.npm/sails/0.9.7/package.tgz
+240 silly lockFile 26280df7-mceo-npm-sails-0-9-7-package-tgz /Users/iamceo/.npm/sails/0.9.7/package.tgz
+241 info preinstall sails@0.9.7
+242 verbose from cache /Users/iamceo/github/sails-base/test/node_modules/sails/package.json
+243 verbose readDependencies using package.json deps
+244 verbose from cache /Users/iamceo/github/sails-base/test/node_modules/sails/package.json
+245 verbose readDependencies using package.json deps
+246 verbose cache add [ 'winston@0.7.1', null ]
+247 verbose cache add name=undefined spec="winston@0.7.1" args=["winston@0.7.1",null]
+248 verbose parsed url { protocol: null,
+248 verbose parsed url   slashes: null,
+248 verbose parsed url   auth: null,
+248 verbose parsed url   host: null,
+248 verbose parsed url   port: null,
+248 verbose parsed url   hostname: null,
+248 verbose parsed url   hash: null,
+248 verbose parsed url   search: null,
+248 verbose parsed url   query: null,
+248 verbose parsed url   pathname: 'winston@0.7.1',
+248 verbose parsed url   path: 'winston@0.7.1',
+248 verbose parsed url   href: 'winston@0.7.1' }
+249 verbose cache add name="winston" spec="0.7.1" args=["winston","0.7.1"]
+250 verbose parsed url { protocol: null,
+250 verbose parsed url   slashes: null,
+250 verbose parsed url   auth: null,
+250 verbose parsed url   host: null,
+250 verbose parsed url   port: null,
+250 verbose parsed url   hostname: null,
+250 verbose parsed url   hash: null,
+250 verbose parsed url   search: null,
+250 verbose parsed url   query: null,
+250 verbose parsed url   pathname: '0.7.1',
+250 verbose parsed url   path: '0.7.1',
+250 verbose parsed url   href: '0.7.1' }
+251 verbose addNamed [ 'winston', '0.7.1' ]
+252 verbose addNamed [ '0.7.1', '0.7.1' ]
+253 silly lockFile e9235a63-winston-0-7-1 winston@0.7.1
+254 verbose lock winston@0.7.1 /Users/iamceo/.npm/e9235a63-winston-0-7-1.lock
+255 verbose cache add [ 'i18n@0.4.1', null ]
+256 verbose cache add name=undefined spec="i18n@0.4.1" args=["i18n@0.4.1",null]
+257 verbose parsed url { protocol: null,
+257 verbose parsed url   slashes: null,
+257 verbose parsed url   auth: null,
+257 verbose parsed url   host: null,
+257 verbose parsed url   port: null,
+257 verbose parsed url   hostname: null,
+257 verbose parsed url   hash: null,
+257 verbose parsed url   search: null,
+257 verbose parsed url   query: null,
+257 verbose parsed url   pathname: 'i18n@0.4.1',
+257 verbose parsed url   path: 'i18n@0.4.1',
+257 verbose parsed url   href: 'i18n@0.4.1' }
+258 verbose cache add name="i18n" spec="0.4.1" args=["i18n","0.4.1"]
+259 verbose parsed url { protocol: null,
+259 verbose parsed url   slashes: null,
+259 verbose parsed url   auth: null,
+259 verbose parsed url   host: null,
+259 verbose parsed url   port: null,
+259 verbose parsed url   hostname: null,
+259 verbose parsed url   hash: null,
+259 verbose parsed url   search: null,
+259 verbose parsed url   query: null,
+259 verbose parsed url   pathname: '0.4.1',
+259 verbose parsed url   path: '0.4.1',
+259 verbose parsed url   href: '0.4.1' }
+260 verbose addNamed [ 'i18n', '0.4.1' ]
+261 verbose addNamed [ '0.4.1', '0.4.1' ]
+262 silly lockFile 537ebd8b-i18n-0-4-1 i18n@0.4.1
+263 verbose lock i18n@0.4.1 /Users/iamceo/.npm/537ebd8b-i18n-0-4-1.lock
+264 verbose cache add [ 'fs-extra@0.5.0', null ]
+265 verbose cache add name=undefined spec="fs-extra@0.5.0" args=["fs-extra@0.5.0",null]
+266 verbose parsed url { protocol: null,
+266 verbose parsed url   slashes: null,
+266 verbose parsed url   auth: null,
+266 verbose parsed url   host: null,
+266 verbose parsed url   port: null,
+266 verbose parsed url   hostname: null,
+266 verbose parsed url   hash: null,
+266 verbose parsed url   search: null,
+266 verbose parsed url   query: null,
+266 verbose parsed url   pathname: 'fs-extra@0.5.0',
+266 verbose parsed url   path: 'fs-extra@0.5.0',
+266 verbose parsed url   href: 'fs-extra@0.5.0' }
+267 verbose cache add name="fs-extra" spec="0.5.0" args=["fs-extra","0.5.0"]
+268 verbose parsed url { protocol: null,
+268 verbose parsed url   slashes: null,
+268 verbose parsed url   auth: null,
+268 verbose parsed url   host: null,
+268 verbose parsed url   port: null,
+268 verbose parsed url   hostname: null,
+268 verbose parsed url   hash: null,
+268 verbose parsed url   search: null,
+268 verbose parsed url   query: null,
+268 verbose parsed url   pathname: '0.5.0',
+268 verbose parsed url   path: '0.5.0',
+268 verbose parsed url   href: '0.5.0' }
+269 verbose addNamed [ 'fs-extra', '0.5.0' ]
+270 verbose addNamed [ '0.5.0', '0.5.0' ]
+271 silly lockFile 3d3587fc-fs-extra-0-5-0 fs-extra@0.5.0
+272 verbose lock fs-extra@0.5.0 /Users/iamceo/.npm/3d3587fc-fs-extra-0-5-0.lock
+273 verbose cache add [ 'lodash@1.2.1', null ]
+274 verbose cache add name=undefined spec="lodash@1.2.1" args=["lodash@1.2.1",null]
+275 verbose parsed url { protocol: null,
+275 verbose parsed url   slashes: null,
+275 verbose parsed url   auth: null,
+275 verbose parsed url   host: null,
+275 verbose parsed url   port: null,
+275 verbose parsed url   hostname: null,
+275 verbose parsed url   hash: null,
+275 verbose parsed url   search: null,
+275 verbose parsed url   query: null,
+275 verbose parsed url   pathname: 'lodash@1.2.1',
+275 verbose parsed url   path: 'lodash@1.2.1',
+275 verbose parsed url   href: 'lodash@1.2.1' }
+276 verbose cache add name="lodash" spec="1.2.1" args=["lodash","1.2.1"]
+277 verbose parsed url { protocol: null,
+277 verbose parsed url   slashes: null,
+277 verbose parsed url   auth: null,
+277 verbose parsed url   host: null,
+277 verbose parsed url   port: null,
+277 verbose parsed url   hostname: null,
+277 verbose parsed url   hash: null,
+277 verbose parsed url   search: null,
+277 verbose parsed url   query: null,
+277 verbose parsed url   pathname: '1.2.1',
+277 verbose parsed url   path: '1.2.1',
+277 verbose parsed url   href: '1.2.1' }
+278 verbose addNamed [ 'lodash', '1.2.1' ]
+279 verbose addNamed [ '1.2.1', '1.2.1' ]
+280 silly lockFile 97f4aa05-lodash-1-2-1 lodash@1.2.1
+281 verbose lock lodash@1.2.1 /Users/iamceo/.npm/97f4aa05-lodash-1-2-1.lock
+282 verbose cache add [ 'glob@3.1.14', null ]
+283 verbose cache add name=undefined spec="glob@3.1.14" args=["glob@3.1.14",null]
+284 verbose parsed url { protocol: null,
+284 verbose parsed url   slashes: null,
+284 verbose parsed url   auth: null,
+284 verbose parsed url   host: null,
+284 verbose parsed url   port: null,
+284 verbose parsed url   hostname: null,
+284 verbose parsed url   hash: null,
+284 verbose parsed url   search: null,
+284 verbose parsed url   query: null,
+284 verbose parsed url   pathname: 'glob@3.1.14',
+284 verbose parsed url   path: 'glob@3.1.14',
+284 verbose parsed url   href: 'glob@3.1.14' }
+285 verbose cache add name="glob" spec="3.1.14" args=["glob","3.1.14"]
+286 verbose parsed url { protocol: null,
+286 verbose parsed url   slashes: null,
+286 verbose parsed url   auth: null,
+286 verbose parsed url   host: null,
+286 verbose parsed url   port: null,
+286 verbose parsed url   hostname: null,
+286 verbose parsed url   hash: null,
+286 verbose parsed url   search: null,
+286 verbose parsed url   query: null,
+286 verbose parsed url   pathname: '3.1.14',
+286 verbose parsed url   path: '3.1.14',
+286 verbose parsed url   href: '3.1.14' }
+287 verbose addNamed [ 'glob', '3.1.14' ]
+288 verbose addNamed [ '3.1.14', '3.1.14' ]
+289 silly lockFile 7cf60591-glob-3-1-14 glob@3.1.14
+290 verbose lock glob@3.1.14 /Users/iamceo/.npm/7cf60591-glob-3-1-14.lock
+291 verbose cache add [ 'underscore.string@2.3.0', null ]
+292 verbose cache add name=undefined spec="underscore.string@2.3.0" args=["underscore.string@2.3.0",null]
+293 verbose parsed url { protocol: null,
+293 verbose parsed url   slashes: null,
+293 verbose parsed url   auth: null,
+293 verbose parsed url   host: null,
+293 verbose parsed url   port: null,
+293 verbose parsed url   hostname: null,
+293 verbose parsed url   hash: null,
+293 verbose parsed url   search: null,
+293 verbose parsed url   query: null,
+293 verbose parsed url   pathname: 'underscore.string@2.3.0',
+293 verbose parsed url   path: 'underscore.string@2.3.0',
+293 verbose parsed url   href: 'underscore.string@2.3.0' }
+294 verbose cache add name="underscore.string" spec="2.3.0" args=["underscore.string","2.3.0"]
+295 verbose parsed url { protocol: null,
+295 verbose parsed url   slashes: null,
+295 verbose parsed url   auth: null,
+295 verbose parsed url   host: null,
+295 verbose parsed url   port: null,
+295 verbose parsed url   hostname: null,
+295 verbose parsed url   hash: null,
+295 verbose parsed url   search: null,
+295 verbose parsed url   query: null,
+295 verbose parsed url   pathname: '2.3.0',
+295 verbose parsed url   path: '2.3.0',
+295 verbose parsed url   href: '2.3.0' }
+296 verbose addNamed [ 'underscore.string', '2.3.0' ]
+297 verbose addNamed [ '2.3.0', '2.3.0' ]
+298 silly lockFile e3dba6a2-underscore-string-2-3-0 underscore.string@2.3.0
+299 verbose lock underscore.string@2.3.0 /Users/iamceo/.npm/e3dba6a2-underscore-string-2-3-0.lock
+300 verbose cache add [ 'include-all@0.1.2', null ]
+301 verbose cache add name=undefined spec="include-all@0.1.2" args=["include-all@0.1.2",null]
+302 verbose parsed url { protocol: null,
+302 verbose parsed url   slashes: null,
+302 verbose parsed url   auth: null,
+302 verbose parsed url   host: null,
+302 verbose parsed url   port: null,
+302 verbose parsed url   hostname: null,
+302 verbose parsed url   hash: null,
+302 verbose parsed url   search: null,
+302 verbose parsed url   query: null,
+302 verbose parsed url   pathname: 'include-all@0.1.2',
+302 verbose parsed url   path: 'include-all@0.1.2',
+302 verbose parsed url   href: 'include-all@0.1.2' }
+303 verbose cache add name="include-all" spec="0.1.2" args=["include-all","0.1.2"]
+304 verbose parsed url { protocol: null,
+304 verbose parsed url   slashes: null,
+304 verbose parsed url   auth: null,
+304 verbose parsed url   host: null,
+304 verbose parsed url   port: null,
+304 verbose parsed url   hostname: null,
+304 verbose parsed url   hash: null,
+304 verbose parsed url   search: null,
+304 verbose parsed url   query: null,
+304 verbose parsed url   pathname: '0.1.2',
+304 verbose parsed url   path: '0.1.2',
+304 verbose parsed url   href: '0.1.2' }
+305 verbose addNamed [ 'include-all', '0.1.2' ]
+306 verbose addNamed [ '0.1.2', '0.1.2' ]
+307 silly lockFile 4c197ebc-include-all-0-1-2 include-all@0.1.2
+308 verbose lock include-all@0.1.2 /Users/iamceo/.npm/4c197ebc-include-all-0-1-2.lock
+309 verbose cache add [ 'inflection@1.2.5', null ]
+310 verbose cache add name=undefined spec="inflection@1.2.5" args=["inflection@1.2.5",null]
+311 verbose parsed url { protocol: null,
+311 verbose parsed url   slashes: null,
+311 verbose parsed url   auth: null,
+311 verbose parsed url   host: null,
+311 verbose parsed url   port: null,
+311 verbose parsed url   hostname: null,
+311 verbose parsed url   hash: null,
+311 verbose parsed url   search: null,
+311 verbose parsed url   query: null,
+311 verbose parsed url   pathname: 'inflection@1.2.5',
+311 verbose parsed url   path: 'inflection@1.2.5',
+311 verbose parsed url   href: 'inflection@1.2.5' }
+312 verbose cache add name="inflection" spec="1.2.5" args=["inflection","1.2.5"]
+313 verbose parsed url { protocol: null,
+313 verbose parsed url   slashes: null,
+313 verbose parsed url   auth: null,
+313 verbose parsed url   host: null,
+313 verbose parsed url   port: null,
+313 verbose parsed url   hostname: null,
+313 verbose parsed url   hash: null,
+313 verbose parsed url   search: null,
+313 verbose parsed url   query: null,
+313 verbose parsed url   pathname: '1.2.5',
+313 verbose parsed url   path: '1.2.5',
+313 verbose parsed url   href: '1.2.5' }
+314 verbose addNamed [ 'inflection', '1.2.5' ]
+315 verbose addNamed [ '1.2.5', '1.2.5' ]
+316 silly lockFile 0dc7714f-inflection-1-2-5 inflection@1.2.5
+317 verbose lock inflection@1.2.5 /Users/iamceo/.npm/0dc7714f-inflection-1-2-5.lock
+318 verbose cache add [ 'node-uuid@1.4.0', null ]
+319 verbose cache add name=undefined spec="node-uuid@1.4.0" args=["node-uuid@1.4.0",null]
+320 verbose parsed url { protocol: null,
+320 verbose parsed url   slashes: null,
+320 verbose parsed url   auth: null,
+320 verbose parsed url   host: null,
+320 verbose parsed url   port: null,
+320 verbose parsed url   hostname: null,
+320 verbose parsed url   hash: null,
+320 verbose parsed url   search: null,
+320 verbose parsed url   query: null,
+320 verbose parsed url   pathname: 'node-uuid@1.4.0',
+320 verbose parsed url   path: 'node-uuid@1.4.0',
+320 verbose parsed url   href: 'node-uuid@1.4.0' }
+321 verbose cache add name="node-uuid" spec="1.4.0" args=["node-uuid","1.4.0"]
+322 verbose parsed url { protocol: null,
+322 verbose parsed url   slashes: null,
+322 verbose parsed url   auth: null,
+322 verbose parsed url   host: null,
+322 verbose parsed url   port: null,
+322 verbose parsed url   hostname: null,
+322 verbose parsed url   hash: null,
+322 verbose parsed url   search: null,
+322 verbose parsed url   query: null,
+322 verbose parsed url   pathname: '1.4.0',
+322 verbose parsed url   path: '1.4.0',
+322 verbose parsed url   href: '1.4.0' }
+323 verbose addNamed [ 'node-uuid', '1.4.0' ]
+324 verbose addNamed [ '1.4.0', '1.4.0' ]
+325 silly lockFile 788da469-node-uuid-1-4-0 node-uuid@1.4.0
+326 verbose lock node-uuid@1.4.0 /Users/iamceo/.npm/788da469-node-uuid-1-4-0.lock
+327 verbose cache add [ 'grunt-cli@0.1.9', null ]
+328 verbose cache add name=undefined spec="grunt-cli@0.1.9" args=["grunt-cli@0.1.9",null]
+329 verbose parsed url { protocol: null,
+329 verbose parsed url   slashes: null,
+329 verbose parsed url   auth: null,
+329 verbose parsed url   host: null,
+329 verbose parsed url   port: null,
+329 verbose parsed url   hostname: null,
+329 verbose parsed url   hash: null,
+329 verbose parsed url   search: null,
+329 verbose parsed url   query: null,
+329 verbose parsed url   pathname: 'grunt-cli@0.1.9',
+329 verbose parsed url   path: 'grunt-cli@0.1.9',
+329 verbose parsed url   href: 'grunt-cli@0.1.9' }
+330 verbose cache add name="grunt-cli" spec="0.1.9" args=["grunt-cli","0.1.9"]
+331 verbose parsed url { protocol: null,
+331 verbose parsed url   slashes: null,
+331 verbose parsed url   auth: null,
+331 verbose parsed url   host: null,
+331 verbose parsed url   port: null,
+331 verbose parsed url   hostname: null,
+331 verbose parsed url   hash: null,
+331 verbose parsed url   search: null,
+331 verbose parsed url   query: null,
+331 verbose parsed url   pathname: '0.1.9',
+331 verbose parsed url   path: '0.1.9',
+331 verbose parsed url   href: '0.1.9' }
+332 verbose addNamed [ 'grunt-cli', '0.1.9' ]
+333 verbose addNamed [ '0.1.9', '0.1.9' ]
+334 silly lockFile 8faf2ed8-grunt-cli-0-1-9 grunt-cli@0.1.9
+335 verbose lock grunt-cli@0.1.9 /Users/iamceo/.npm/8faf2ed8-grunt-cli-0-1-9.lock
+336 verbose cache add [ 'grunt-contrib-copy@0.4.1', null ]
+337 verbose cache add name=undefined spec="grunt-contrib-copy@0.4.1" args=["grunt-contrib-copy@0.4.1",null]
+338 verbose parsed url { protocol: null,
+338 verbose parsed url   slashes: null,
+338 verbose parsed url   auth: null,
+338 verbose parsed url   host: null,
+338 verbose parsed url   port: null,
+338 verbose parsed url   hostname: null,
+338 verbose parsed url   hash: null,
+338 verbose parsed url   search: null,
+338 verbose parsed url   query: null,
+338 verbose parsed url   pathname: 'grunt-contrib-copy@0.4.1',
+338 verbose parsed url   path: 'grunt-contrib-copy@0.4.1',
+338 verbose parsed url   href: 'grunt-contrib-copy@0.4.1' }
+339 verbose cache add name="grunt-contrib-copy" spec="0.4.1" args=["grunt-contrib-copy","0.4.1"]
+340 verbose parsed url { protocol: null,
+340 verbose parsed url   slashes: null,
+340 verbose parsed url   auth: null,
+340 verbose parsed url   host: null,
+340 verbose parsed url   port: null,
+340 verbose parsed url   hostname: null,
+340 verbose parsed url   hash: null,
+340 verbose parsed url   search: null,
+340 verbose parsed url   query: null,
+340 verbose parsed url   pathname: '0.4.1',
+340 verbose parsed url   path: '0.4.1',
+340 verbose parsed url   href: '0.4.1' }
+341 verbose addNamed [ 'grunt-contrib-copy', '0.4.1' ]
+342 verbose addNamed [ '0.4.1', '0.4.1' ]
+343 silly lockFile 4dbab511-grunt-contrib-copy-0-4-1 grunt-contrib-copy@0.4.1
+344 verbose lock grunt-contrib-copy@0.4.1 /Users/iamceo/.npm/4dbab511-grunt-contrib-copy-0-4-1.lock
+345 verbose cache add [ 'grunt-contrib-clean@0.4.1', null ]
+346 verbose cache add name=undefined spec="grunt-contrib-clean@0.4.1" args=["grunt-contrib-clean@0.4.1",null]
+347 verbose parsed url { protocol: null,
+347 verbose parsed url   slashes: null,
+347 verbose parsed url   auth: null,
+347 verbose parsed url   host: null,
+347 verbose parsed url   port: null,
+347 verbose parsed url   hostname: null,
+347 verbose parsed url   hash: null,
+347 verbose parsed url   search: null,
+347 verbose parsed url   query: null,
+347 verbose parsed url   pathname: 'grunt-contrib-clean@0.4.1',
+347 verbose parsed url   path: 'grunt-contrib-clean@0.4.1',
+347 verbose parsed url   href: 'grunt-contrib-clean@0.4.1' }
+348 verbose cache add name="grunt-contrib-clean" spec="0.4.1" args=["grunt-contrib-clean","0.4.1"]
+349 verbose parsed url { protocol: null,
+349 verbose parsed url   slashes: null,
+349 verbose parsed url   auth: null,
+349 verbose parsed url   host: null,
+349 verbose parsed url   port: null,
+349 verbose parsed url   hostname: null,
+349 verbose parsed url   hash: null,
+349 verbose parsed url   search: null,
+349 verbose parsed url   query: null,
+349 verbose parsed url   pathname: '0.4.1',
+349 verbose parsed url   path: '0.4.1',
+349 verbose parsed url   href: '0.4.1' }
+350 verbose addNamed [ 'grunt-contrib-clean', '0.4.1' ]
+351 verbose addNamed [ '0.4.1', '0.4.1' ]
+352 silly lockFile d4970290-grunt-contrib-clean-0-4-1 grunt-contrib-clean@0.4.1
+353 verbose lock grunt-contrib-clean@0.4.1 /Users/iamceo/.npm/d4970290-grunt-contrib-clean-0-4-1.lock
+354 verbose cache add [ 'grunt-contrib-concat@0.3.0', null ]
+355 verbose cache add name=undefined spec="grunt-contrib-concat@0.3.0" args=["grunt-contrib-concat@0.3.0",null]
+356 verbose parsed url { protocol: null,
+356 verbose parsed url   slashes: null,
+356 verbose parsed url   auth: null,
+356 verbose parsed url   host: null,
+356 verbose parsed url   port: null,
+356 verbose parsed url   hostname: null,
+356 verbose parsed url   hash: null,
+356 verbose parsed url   search: null,
+356 verbose parsed url   query: null,
+356 verbose parsed url   pathname: 'grunt-contrib-concat@0.3.0',
+356 verbose parsed url   path: 'grunt-contrib-concat@0.3.0',
+356 verbose parsed url   href: 'grunt-contrib-concat@0.3.0' }
+357 verbose cache add name="grunt-contrib-concat" spec="0.3.0" args=["grunt-contrib-concat","0.3.0"]
+358 verbose parsed url { protocol: null,
+358 verbose parsed url   slashes: null,
+358 verbose parsed url   auth: null,
+358 verbose parsed url   host: null,
+358 verbose parsed url   port: null,
+358 verbose parsed url   hostname: null,
+358 verbose parsed url   hash: null,
+358 verbose parsed url   search: null,
+358 verbose parsed url   query: null,
+358 verbose parsed url   pathname: '0.3.0',
+358 verbose parsed url   path: '0.3.0',
+358 verbose parsed url   href: '0.3.0' }
+359 verbose addNamed [ 'grunt-contrib-concat', '0.3.0' ]
+360 verbose addNamed [ '0.3.0', '0.3.0' ]
+361 silly lockFile 11d10dc6-grunt-contrib-concat-0-3-0 grunt-contrib-concat@0.3.0
+362 verbose lock grunt-contrib-concat@0.3.0 /Users/iamceo/.npm/11d10dc6-grunt-contrib-concat-0-3-0.lock
+363 verbose cache add [ 'grunt-sails-linker@git://github.com/Zolmeister/grunt-sails-linker.git',
+363 verbose cache add   null ]
+364 verbose cache add name=undefined spec="grunt-sails-linker@git://github.com/Zolmeister/grunt-sails-linker.git" args=["grunt-sails-linker@git://github.com/Zolmeister/grunt-sails-linker.git",null]
+365 verbose parsed url { protocol: null,
+365 verbose parsed url   slashes: null,
+365 verbose parsed url   auth: null,
+365 verbose parsed url   host: null,
+365 verbose parsed url   port: null,
+365 verbose parsed url   hostname: null,
+365 verbose parsed url   hash: null,
+365 verbose parsed url   search: null,
+365 verbose parsed url   query: null,
+365 verbose parsed url   pathname: 'grunt-sails-linker@git://github.com/Zolmeister/grunt-sails-linker.git',
+365 verbose parsed url   path: 'grunt-sails-linker@git://github.com/Zolmeister/grunt-sails-linker.git',
+365 verbose parsed url   href: 'grunt-sails-linker@git://github.com/Zolmeister/grunt-sails-linker.git' }
+366 verbose cache add name="grunt-sails-linker" spec="git://github.com/Zolmeister/grunt-sails-linker.git" args=["grunt-sails-linker","git://github.com/Zolmeister/grunt-sails-linker.git"]
+367 verbose parsed url { protocol: 'git:',
+367 verbose parsed url   slashes: true,
+367 verbose parsed url   auth: null,
+367 verbose parsed url   host: 'github.com',
+367 verbose parsed url   port: null,
+367 verbose parsed url   hostname: 'github.com',
+367 verbose parsed url   hash: null,
+367 verbose parsed url   search: null,
+367 verbose parsed url   query: null,
+367 verbose parsed url   pathname: '/Zolmeister/grunt-sails-linker.git',
+367 verbose parsed url   path: '/Zolmeister/grunt-sails-linker.git',
+367 verbose parsed url   href: 'git://github.com/Zolmeister/grunt-sails-linker.git' }
+368 silly lockFile d5f0a8f5-olmeister-grunt-sails-linker-git git://github.com/Zolmeister/grunt-sails-linker.git
+369 verbose lock git://github.com/Zolmeister/grunt-sails-linker.git /Users/iamceo/.npm/d5f0a8f5-olmeister-grunt-sails-linker-git.lock
+370 verbose cache add [ 'grunt-contrib-jst@0.5.0', null ]
+371 verbose cache add name=undefined spec="grunt-contrib-jst@0.5.0" args=["grunt-contrib-jst@0.5.0",null]
+372 verbose parsed url { protocol: null,
+372 verbose parsed url   slashes: null,
+372 verbose parsed url   auth: null,
+372 verbose parsed url   host: null,
+372 verbose parsed url   port: null,
+372 verbose parsed url   hostname: null,
+372 verbose parsed url   hash: null,
+372 verbose parsed url   search: null,
+372 verbose parsed url   query: null,
+372 verbose parsed url   pathname: 'grunt-contrib-jst@0.5.0',
+372 verbose parsed url   path: 'grunt-contrib-jst@0.5.0',
+372 verbose parsed url   href: 'grunt-contrib-jst@0.5.0' }
+373 verbose cache add name="grunt-contrib-jst" spec="0.5.0" args=["grunt-contrib-jst","0.5.0"]
+374 verbose parsed url { protocol: null,
+374 verbose parsed url   slashes: null,
+374 verbose parsed url   auth: null,
+374 verbose parsed url   host: null,
+374 verbose parsed url   port: null,
+374 verbose parsed url   hostname: null,
+374 verbose parsed url   hash: null,
+374 verbose parsed url   search: null,
+374 verbose parsed url   query: null,
+374 verbose parsed url   pathname: '0.5.0',
+374 verbose parsed url   path: '0.5.0',
+374 verbose parsed url   href: '0.5.0' }
+375 verbose addNamed [ 'grunt-contrib-jst', '0.5.0' ]
+376 verbose addNamed [ '0.5.0', '0.5.0' ]
+377 silly lockFile 4fe51162-grunt-contrib-jst-0-5-0 grunt-contrib-jst@0.5.0
+378 verbose lock grunt-contrib-jst@0.5.0 /Users/iamceo/.npm/4fe51162-grunt-contrib-jst-0-5-0.lock
+379 verbose cache add [ 'grunt-contrib-watch@0.4.4', null ]
+380 verbose cache add name=undefined spec="grunt-contrib-watch@0.4.4" args=["grunt-contrib-watch@0.4.4",null]
+381 verbose parsed url { protocol: null,
+381 verbose parsed url   slashes: null,
+381 verbose parsed url   auth: null,
+381 verbose parsed url   host: null,
+381 verbose parsed url   port: null,
+381 verbose parsed url   hostname: null,
+381 verbose parsed url   hash: null,
+381 verbose parsed url   search: null,
+381 verbose parsed url   query: null,
+381 verbose parsed url   pathname: 'grunt-contrib-watch@0.4.4',
+381 verbose parsed url   path: 'grunt-contrib-watch@0.4.4',
+381 verbose parsed url   href: 'grunt-contrib-watch@0.4.4' }
+382 verbose cache add name="grunt-contrib-watch" spec="0.4.4" args=["grunt-contrib-watch","0.4.4"]
+383 verbose parsed url { protocol: null,
+383 verbose parsed url   slashes: null,
+383 verbose parsed url   auth: null,
+383 verbose parsed url   host: null,
+383 verbose parsed url   port: null,
+383 verbose parsed url   hostname: null,
+383 verbose parsed url   hash: null,
+383 verbose parsed url   search: null,
+383 verbose parsed url   query: null,
+383 verbose parsed url   pathname: '0.4.4',
+383 verbose parsed url   path: '0.4.4',
+383 verbose parsed url   href: '0.4.4' }
+384 verbose addNamed [ 'grunt-contrib-watch', '0.4.4' ]
+385 verbose addNamed [ '0.4.4', '0.4.4' ]
+386 silly lockFile 7928dfc2-grunt-contrib-watch-0-4-4 grunt-contrib-watch@0.4.4
+387 verbose lock grunt-contrib-watch@0.4.4 /Users/iamceo/.npm/7928dfc2-grunt-contrib-watch-0-4-4.lock
+388 verbose cache add [ 'grunt-contrib-uglify@0.2.2', null ]
+389 verbose cache add name=undefined spec="grunt-contrib-uglify@0.2.2" args=["grunt-contrib-uglify@0.2.2",null]
+390 verbose parsed url { protocol: null,
+390 verbose parsed url   slashes: null,
+390 verbose parsed url   auth: null,
+390 verbose parsed url   host: null,
+390 verbose parsed url   port: null,
+390 verbose parsed url   hostname: null,
+390 verbose parsed url   hash: null,
+390 verbose parsed url   search: null,
+390 verbose parsed url   query: null,
+390 verbose parsed url   pathname: 'grunt-contrib-uglify@0.2.2',
+390 verbose parsed url   path: 'grunt-contrib-uglify@0.2.2',
+390 verbose parsed url   href: 'grunt-contrib-uglify@0.2.2' }
+391 verbose cache add name="grunt-contrib-uglify" spec="0.2.2" args=["grunt-contrib-uglify","0.2.2"]
+392 verbose parsed url { protocol: null,
+392 verbose parsed url   slashes: null,
+392 verbose parsed url   auth: null,
+392 verbose parsed url   host: null,
+392 verbose parsed url   port: null,
+392 verbose parsed url   hostname: null,
+392 verbose parsed url   hash: null,
+392 verbose parsed url   search: null,
+392 verbose parsed url   query: null,
+392 verbose parsed url   pathname: '0.2.2',
+392 verbose parsed url   path: '0.2.2',
+392 verbose parsed url   href: '0.2.2' }
+393 verbose addNamed [ 'grunt-contrib-uglify', '0.2.2' ]
+394 verbose addNamed [ '0.2.2', '0.2.2' ]
+395 silly lockFile c0c166a2-grunt-contrib-uglify-0-2-2 grunt-contrib-uglify@0.2.2
+396 verbose lock grunt-contrib-uglify@0.2.2 /Users/iamceo/.npm/c0c166a2-grunt-contrib-uglify-0-2-2.lock
+397 verbose cache add [ 'grunt-contrib-cssmin@0.6.1', null ]
+398 verbose cache add name=undefined spec="grunt-contrib-cssmin@0.6.1" args=["grunt-contrib-cssmin@0.6.1",null]
+399 verbose parsed url { protocol: null,
+399 verbose parsed url   slashes: null,
+399 verbose parsed url   auth: null,
+399 verbose parsed url   host: null,
+399 verbose parsed url   port: null,
+399 verbose parsed url   hostname: null,
+399 verbose parsed url   hash: null,
+399 verbose parsed url   search: null,
+399 verbose parsed url   query: null,
+399 verbose parsed url   pathname: 'grunt-contrib-cssmin@0.6.1',
+399 verbose parsed url   path: 'grunt-contrib-cssmin@0.6.1',
+399 verbose parsed url   href: 'grunt-contrib-cssmin@0.6.1' }
+400 verbose cache add name="grunt-contrib-cssmin" spec="0.6.1" args=["grunt-contrib-cssmin","0.6.1"]
+401 verbose parsed url { protocol: null,
+401 verbose parsed url   slashes: null,
+401 verbose parsed url   auth: null,
+401 verbose parsed url   host: null,
+401 verbose parsed url   port: null,
+401 verbose parsed url   hostname: null,
+401 verbose parsed url   hash: null,
+401 verbose parsed url   search: null,
+401 verbose parsed url   query: null,
+401 verbose parsed url   pathname: '0.6.1',
+401 verbose parsed url   path: '0.6.1',
+401 verbose parsed url   href: '0.6.1' }
+402 verbose addNamed [ 'grunt-contrib-cssmin', '0.6.1' ]
+403 verbose addNamed [ '0.6.1', '0.6.1' ]
+404 silly lockFile 4a4cc82c-grunt-contrib-cssmin-0-6-1 grunt-contrib-cssmin@0.6.1
+405 verbose lock grunt-contrib-cssmin@0.6.1 /Users/iamceo/.npm/4a4cc82c-grunt-contrib-cssmin-0-6-1.lock
+406 verbose cache add [ 'grunt-contrib-less@0.5.2', null ]
+407 verbose cache add name=undefined spec="grunt-contrib-less@0.5.2" args=["grunt-contrib-less@0.5.2",null]
+408 verbose parsed url { protocol: null,
+408 verbose parsed url   slashes: null,
+408 verbose parsed url   auth: null,
+408 verbose parsed url   host: null,
+408 verbose parsed url   port: null,
+408 verbose parsed url   hostname: null,
+408 verbose parsed url   hash: null,
+408 verbose parsed url   search: null,
+408 verbose parsed url   query: null,
+408 verbose parsed url   pathname: 'grunt-contrib-less@0.5.2',
+408 verbose parsed url   path: 'grunt-contrib-less@0.5.2',
+408 verbose parsed url   href: 'grunt-contrib-less@0.5.2' }
+409 verbose cache add name="grunt-contrib-less" spec="0.5.2" args=["grunt-contrib-less","0.5.2"]
+410 verbose parsed url { protocol: null,
+410 verbose parsed url   slashes: null,
+410 verbose parsed url   auth: null,
+410 verbose parsed url   host: null,
+410 verbose parsed url   port: null,
+410 verbose parsed url   hostname: null,
+410 verbose parsed url   hash: null,
+410 verbose parsed url   search: null,
+410 verbose parsed url   query: null,
+410 verbose parsed url   pathname: '0.5.2',
+410 verbose parsed url   path: '0.5.2',
+410 verbose parsed url   href: '0.5.2' }
+411 verbose addNamed [ 'grunt-contrib-less', '0.5.2' ]
+412 verbose addNamed [ '0.5.2', '0.5.2' ]
+413 silly lockFile cf4492c1-grunt-contrib-less-0-5-2 grunt-contrib-less@0.5.2
+414 verbose lock grunt-contrib-less@0.5.2 /Users/iamceo/.npm/cf4492c1-grunt-contrib-less-0-5-2.lock
+415 verbose cache add [ 'grunt-contrib-coffee@~0.7.0', null ]
+416 verbose cache add name=undefined spec="grunt-contrib-coffee@~0.7.0" args=["grunt-contrib-coffee@~0.7.0",null]
+417 verbose parsed url { protocol: null,
+417 verbose parsed url   slashes: null,
+417 verbose parsed url   auth: null,
+417 verbose parsed url   host: null,
+417 verbose parsed url   port: null,
+417 verbose parsed url   hostname: null,
+417 verbose parsed url   hash: null,
+417 verbose parsed url   search: null,
+417 verbose parsed url   query: null,
+417 verbose parsed url   pathname: 'grunt-contrib-coffee@~0.7.0',
+417 verbose parsed url   path: 'grunt-contrib-coffee@~0.7.0',
+417 verbose parsed url   href: 'grunt-contrib-coffee@~0.7.0' }
+418 verbose cache add name="grunt-contrib-coffee" spec="~0.7.0" args=["grunt-contrib-coffee","~0.7.0"]
+419 verbose parsed url { protocol: null,
+419 verbose parsed url   slashes: null,
+419 verbose parsed url   auth: null,
+419 verbose parsed url   host: null,
+419 verbose parsed url   port: null,
+419 verbose parsed url   hostname: null,
+419 verbose parsed url   hash: null,
+419 verbose parsed url   search: null,
+419 verbose parsed url   query: null,
+419 verbose parsed url   pathname: '~0.7.0',
+419 verbose parsed url   path: '~0.7.0',
+419 verbose parsed url   href: '~0.7.0' }
+420 verbose addNamed [ 'grunt-contrib-coffee', '~0.7.0' ]
+421 verbose addNamed [ null, '>=0.7.0- <0.8.0-' ]
+422 silly lockFile 2d9311bb-grunt-contrib-coffee-0-7-0 grunt-contrib-coffee@~0.7.0
+423 verbose lock grunt-contrib-coffee@~0.7.0 /Users/iamceo/.npm/2d9311bb-grunt-contrib-coffee-0-7-0.lock
+424 verbose cache add [ 'ejs-locals@1.0.2', null ]
+425 verbose cache add name=undefined spec="ejs-locals@1.0.2" args=["ejs-locals@1.0.2",null]
+426 verbose parsed url { protocol: null,
+426 verbose parsed url   slashes: null,
+426 verbose parsed url   auth: null,
+426 verbose parsed url   host: null,
+426 verbose parsed url   port: null,
+426 verbose parsed url   hostname: null,
+426 verbose parsed url   hash: null,
+426 verbose parsed url   search: null,
+426 verbose parsed url   query: null,
+426 verbose parsed url   pathname: 'ejs-locals@1.0.2',
+426 verbose parsed url   path: 'ejs-locals@1.0.2',
+426 verbose parsed url   href: 'ejs-locals@1.0.2' }
+427 verbose cache add name="ejs-locals" spec="1.0.2" args=["ejs-locals","1.0.2"]
+428 verbose parsed url { protocol: null,
+428 verbose parsed url   slashes: null,
+428 verbose parsed url   auth: null,
+428 verbose parsed url   host: null,
+428 verbose parsed url   port: null,
+428 verbose parsed url   hostname: null,
+428 verbose parsed url   hash: null,
+428 verbose parsed url   search: null,
+428 verbose parsed url   query: null,
+428 verbose parsed url   pathname: '1.0.2',
+428 verbose parsed url   path: '1.0.2',
+428 verbose parsed url   href: '1.0.2' }
+429 verbose addNamed [ 'ejs-locals', '1.0.2' ]
+430 verbose addNamed [ '1.0.2', '1.0.2' ]
+431 silly lockFile 993d366b-ejs-locals-1-0-2 ejs-locals@1.0.2
+432 verbose lock ejs-locals@1.0.2 /Users/iamceo/.npm/993d366b-ejs-locals-1-0-2.lock
+433 verbose cache add [ 'connect-flash@0.1.1', null ]
+434 verbose cache add name=undefined spec="connect-flash@0.1.1" args=["connect-flash@0.1.1",null]
+435 verbose parsed url { protocol: null,
+435 verbose parsed url   slashes: null,
+435 verbose parsed url   auth: null,
+435 verbose parsed url   host: null,
+435 verbose parsed url   port: null,
+435 verbose parsed url   hostname: null,
+435 verbose parsed url   hash: null,
+435 verbose parsed url   search: null,
+435 verbose parsed url   query: null,
+435 verbose parsed url   pathname: 'connect-flash@0.1.1',
+435 verbose parsed url   path: 'connect-flash@0.1.1',
+435 verbose parsed url   href: 'connect-flash@0.1.1' }
+436 verbose cache add name="connect-flash" spec="0.1.1" args=["connect-flash","0.1.1"]
+437 verbose parsed url { protocol: null,
+437 verbose parsed url   slashes: null,
+437 verbose parsed url   auth: null,
+437 verbose parsed url   host: null,
+437 verbose parsed url   port: null,
+437 verbose parsed url   hostname: null,
+437 verbose parsed url   hash: null,
+437 verbose parsed url   search: null,
+437 verbose parsed url   query: null,
+437 verbose parsed url   pathname: '0.1.1',
+437 verbose parsed url   path: '0.1.1',
+437 verbose parsed url   href: '0.1.1' }
+438 verbose addNamed [ 'connect-flash', '0.1.1' ]
+439 verbose addNamed [ '0.1.1', '0.1.1' ]
+440 silly lockFile 0cdf4f98-connect-flash-0-1-1 connect-flash@0.1.1
+441 verbose lock connect-flash@0.1.1 /Users/iamceo/.npm/0cdf4f98-connect-flash-0-1-1.lock
+442 verbose cache add [ 'pluralize@0.0.5', null ]
+443 verbose cache add name=undefined spec="pluralize@0.0.5" args=["pluralize@0.0.5",null]
+444 verbose parsed url { protocol: null,
+444 verbose parsed url   slashes: null,
+444 verbose parsed url   auth: null,
+444 verbose parsed url   host: null,
+444 verbose parsed url   port: null,
+444 verbose parsed url   hostname: null,
+444 verbose parsed url   hash: null,
+444 verbose parsed url   search: null,
+444 verbose parsed url   query: null,
+444 verbose parsed url   pathname: 'pluralize@0.0.5',
+444 verbose parsed url   path: 'pluralize@0.0.5',
+444 verbose parsed url   href: 'pluralize@0.0.5' }
+445 verbose cache add name="pluralize" spec="0.0.5" args=["pluralize","0.0.5"]
+446 verbose parsed url { protocol: null,
+446 verbose parsed url   slashes: null,
+446 verbose parsed url   auth: null,
+446 verbose parsed url   host: null,
+446 verbose parsed url   port: null,
+446 verbose parsed url   hostname: null,
+446 verbose parsed url   hash: null,
+446 verbose parsed url   search: null,
+446 verbose parsed url   query: null,
+446 verbose parsed url   pathname: '0.0.5',
+446 verbose parsed url   path: '0.0.5',
+446 verbose parsed url   href: '0.0.5' }
+447 verbose addNamed [ 'pluralize', '0.0.5' ]
+448 verbose addNamed [ '0.0.5', '0.0.5' ]
+449 silly lockFile 0e6b1b05-pluralize-0-0-5 pluralize@0.0.5
+450 verbose lock pluralize@0.0.5 /Users/iamceo/.npm/0e6b1b05-pluralize-0-0-5.lock
+451 verbose cache add [ 'coffee-script@1.6.2', null ]
+452 verbose cache add name=undefined spec="coffee-script@1.6.2" args=["coffee-script@1.6.2",null]
+453 verbose parsed url { protocol: null,
+453 verbose parsed url   slashes: null,
+453 verbose parsed url   auth: null,
+453 verbose parsed url   host: null,
+453 verbose parsed url   port: null,
+453 verbose parsed url   hostname: null,
+453 verbose parsed url   hash: null,
+453 verbose parsed url   search: null,
+453 verbose parsed url   query: null,
+453 verbose parsed url   pathname: 'coffee-script@1.6.2',
+453 verbose parsed url   path: 'coffee-script@1.6.2',
+453 verbose parsed url   href: 'coffee-script@1.6.2' }
+454 verbose cache add name="coffee-script" spec="1.6.2" args=["coffee-script","1.6.2"]
+455 verbose parsed url { protocol: null,
+455 verbose parsed url   slashes: null,
+455 verbose parsed url   auth: null,
+455 verbose parsed url   host: null,
+455 verbose parsed url   port: null,
+455 verbose parsed url   hostname: null,
+455 verbose parsed url   hash: null,
+455 verbose parsed url   search: null,
+455 verbose parsed url   query: null,
+455 verbose parsed url   pathname: '1.6.2',
+455 verbose parsed url   path: '1.6.2',
+455 verbose parsed url   href: '1.6.2' }
+456 verbose addNamed [ 'coffee-script', '1.6.2' ]
+457 verbose addNamed [ '1.6.2', '1.6.2' ]
+458 silly lockFile 0166e586-coffee-script-1-6-2 coffee-script@1.6.2
+459 verbose lock coffee-script@1.6.2 /Users/iamceo/.npm/0166e586-coffee-script-1-6-2.lock
+460 verbose cache add [ 'waterline@~0.9.4', null ]
+461 verbose cache add name=undefined spec="waterline@~0.9.4" args=["waterline@~0.9.4",null]
+462 verbose parsed url { protocol: null,
+462 verbose parsed url   slashes: null,
+462 verbose parsed url   auth: null,
+462 verbose parsed url   host: null,
+462 verbose parsed url   port: null,
+462 verbose parsed url   hostname: null,
+462 verbose parsed url   hash: null,
+462 verbose parsed url   search: null,
+462 verbose parsed url   query: null,
+462 verbose parsed url   pathname: 'waterline@~0.9.4',
+462 verbose parsed url   path: 'waterline@~0.9.4',
+462 verbose parsed url   href: 'waterline@~0.9.4' }
+463 verbose cache add name="waterline" spec="~0.9.4" args=["waterline","~0.9.4"]
+464 verbose parsed url { protocol: null,
+464 verbose parsed url   slashes: null,
+464 verbose parsed url   auth: null,
+464 verbose parsed url   host: null,
+464 verbose parsed url   port: null,
+464 verbose parsed url   hostname: null,
+464 verbose parsed url   hash: null,
+464 verbose parsed url   search: null,
+464 verbose parsed url   query: null,
+464 verbose parsed url   pathname: '~0.9.4',
+464 verbose parsed url   path: '~0.9.4',
+464 verbose parsed url   href: '~0.9.4' }
+465 verbose addNamed [ 'waterline', '~0.9.4' ]
+466 verbose addNamed [ null, '>=0.9.4- <0.10.0-' ]
+467 silly lockFile 043d9887-waterline-0-9-4 waterline@~0.9.4
+468 verbose lock waterline@~0.9.4 /Users/iamceo/.npm/043d9887-waterline-0-9-4.lock
+469 verbose cache add [ 'express@3.4.0', null ]
+470 verbose cache add name=undefined spec="express@3.4.0" args=["express@3.4.0",null]
+471 verbose parsed url { protocol: null,
+471 verbose parsed url   slashes: null,
+471 verbose parsed url   auth: null,
+471 verbose parsed url   host: null,
+471 verbose parsed url   port: null,
+471 verbose parsed url   hostname: null,
+471 verbose parsed url   hash: null,
+471 verbose parsed url   search: null,
+471 verbose parsed url   query: null,
+471 verbose parsed url   pathname: 'express@3.4.0',
+471 verbose parsed url   path: 'express@3.4.0',
+471 verbose parsed url   href: 'express@3.4.0' }
+472 verbose cache add name="express" spec="3.4.0" args=["express","3.4.0"]
+473 verbose parsed url { protocol: null,
+473 verbose parsed url   slashes: null,
+473 verbose parsed url   auth: null,
+473 verbose parsed url   host: null,
+473 verbose parsed url   port: null,
+473 verbose parsed url   hostname: null,
+473 verbose parsed url   hash: null,
+473 verbose parsed url   search: null,
+473 verbose parsed url   query: null,
+473 verbose parsed url   pathname: '3.4.0',
+473 verbose parsed url   path: '3.4.0',
+473 verbose parsed url   href: '3.4.0' }
+474 verbose addNamed [ 'express', '3.4.0' ]
+475 verbose addNamed [ '3.4.0', '3.4.0' ]
+476 silly lockFile 86194427-express-3-4-0 express@3.4.0
+477 verbose lock express@3.4.0 /Users/iamceo/.npm/86194427-express-3-4-0.lock
+478 verbose cache add [ 'socket.io@0.9.14', null ]
+479 verbose cache add name=undefined spec="socket.io@0.9.14" args=["socket.io@0.9.14",null]
+480 verbose parsed url { protocol: null,
+480 verbose parsed url   slashes: null,
+480 verbose parsed url   auth: null,
+480 verbose parsed url   host: null,
+480 verbose parsed url   port: null,
+480 verbose parsed url   hostname: null,
+480 verbose parsed url   hash: null,
+480 verbose parsed url   search: null,
+480 verbose parsed url   query: null,
+480 verbose parsed url   pathname: 'socket.io@0.9.14',
+480 verbose parsed url   path: 'socket.io@0.9.14',
+480 verbose parsed url   href: 'socket.io@0.9.14' }
+481 verbose cache add name="socket.io" spec="0.9.14" args=["socket.io","0.9.14"]
+482 verbose parsed url { protocol: null,
+482 verbose parsed url   slashes: null,
+482 verbose parsed url   auth: null,
+482 verbose parsed url   host: null,
+482 verbose parsed url   port: null,
+482 verbose parsed url   hostname: null,
+482 verbose parsed url   hash: null,
+482 verbose parsed url   search: null,
+482 verbose parsed url   query: null,
+482 verbose parsed url   pathname: '0.9.14',
+482 verbose parsed url   path: '0.9.14',
+482 verbose parsed url   href: '0.9.14' }
+483 verbose addNamed [ 'socket.io', '0.9.14' ]
+484 verbose addNamed [ '0.9.14', '0.9.14' ]
+485 silly lockFile 937091a8-socket-io-0-9-14 socket.io@0.9.14
+486 verbose lock socket.io@0.9.14 /Users/iamceo/.npm/937091a8-socket-io-0-9-14.lock
+487 verbose cache add [ 'connect-redis@1.4.5', null ]
+488 verbose cache add name=undefined spec="connect-redis@1.4.5" args=["connect-redis@1.4.5",null]
+489 verbose parsed url { protocol: null,
+489 verbose parsed url   slashes: null,
+489 verbose parsed url   auth: null,
+489 verbose parsed url   host: null,
+489 verbose parsed url   port: null,
+489 verbose parsed url   hostname: null,
+489 verbose parsed url   hash: null,
+489 verbose parsed url   search: null,
+489 verbose parsed url   query: null,
+489 verbose parsed url   pathname: 'connect-redis@1.4.5',
+489 verbose parsed url   path: 'connect-redis@1.4.5',
+489 verbose parsed url   href: 'connect-redis@1.4.5' }
+490 verbose cache add name="connect-redis" spec="1.4.5" args=["connect-redis","1.4.5"]
+491 verbose parsed url { protocol: null,
+491 verbose parsed url   slashes: null,
+491 verbose parsed url   auth: null,
+491 verbose parsed url   host: null,
+491 verbose parsed url   port: null,
+491 verbose parsed url   hostname: null,
+491 verbose parsed url   hash: null,
+491 verbose parsed url   search: null,
+491 verbose parsed url   query: null,
+491 verbose parsed url   pathname: '1.4.5',
+491 verbose parsed url   path: '1.4.5',
+491 verbose parsed url   href: '1.4.5' }
+492 verbose addNamed [ 'connect-redis', '1.4.5' ]
+493 verbose addNamed [ '1.4.5', '1.4.5' ]
+494 silly lockFile 08b4a927-connect-redis-1-4-5 connect-redis@1.4.5
+495 verbose lock connect-redis@1.4.5 /Users/iamceo/.npm/08b4a927-connect-redis-1-4-5.lock
+496 verbose cache add [ 'connect-mongo@0.3.2', null ]
+497 verbose cache add name=undefined spec="connect-mongo@0.3.2" args=["connect-mongo@0.3.2",null]
+498 verbose parsed url { protocol: null,
+498 verbose parsed url   slashes: null,
+498 verbose parsed url   auth: null,
+498 verbose parsed url   host: null,
+498 verbose parsed url   port: null,
+498 verbose parsed url   hostname: null,
+498 verbose parsed url   hash: null,
+498 verbose parsed url   search: null,
+498 verbose parsed url   query: null,
+498 verbose parsed url   pathname: 'connect-mongo@0.3.2',
+498 verbose parsed url   path: 'connect-mongo@0.3.2',
+498 verbose parsed url   href: 'connect-mongo@0.3.2' }
+499 verbose cache add name="connect-mongo" spec="0.3.2" args=["connect-mongo","0.3.2"]
+500 verbose parsed url { protocol: null,
+500 verbose parsed url   slashes: null,
+500 verbose parsed url   auth: null,
+500 verbose parsed url   host: null,
+500 verbose parsed url   port: null,
+500 verbose parsed url   hostname: null,
+500 verbose parsed url   hash: null,
+500 verbose parsed url   search: null,
+500 verbose parsed url   query: null,
+500 verbose parsed url   pathname: '0.3.2',
+500 verbose parsed url   path: '0.3.2',
+500 verbose parsed url   href: '0.3.2' }
+501 verbose addNamed [ 'connect-mongo', '0.3.2' ]
+502 verbose addNamed [ '0.3.2', '0.3.2' ]
+503 silly lockFile 1110d7c4-connect-mongo-0-3-2 connect-mongo@0.3.2
+504 verbose lock connect-mongo@0.3.2 /Users/iamceo/.npm/1110d7c4-connect-mongo-0-3-2.lock
+505 verbose addRemoteGit [ 'git://github.com/Zolmeister/grunt-sails-linker.git',
+505 verbose addRemoteGit   'master' ]
+506 verbose cache add [ 'async@0.2.9', null ]
+507 verbose cache add name=undefined spec="async@0.2.9" args=["async@0.2.9",null]
+508 verbose parsed url { protocol: null,
+508 verbose parsed url   slashes: null,
+508 verbose parsed url   auth: null,
+508 verbose parsed url   host: null,
+508 verbose parsed url   port: null,
+508 verbose parsed url   hostname: null,
+508 verbose parsed url   hash: null,
+508 verbose parsed url   search: null,
+508 verbose parsed url   query: null,
+508 verbose parsed url   pathname: 'async@0.2.9',
+508 verbose parsed url   path: 'async@0.2.9',
+508 verbose parsed url   href: 'async@0.2.9' }
+509 verbose cache add name="async" spec="0.2.9" args=["async","0.2.9"]
+510 verbose parsed url { protocol: null,
+510 verbose parsed url   slashes: null,
+510 verbose parsed url   auth: null,
+510 verbose parsed url   host: null,
+510 verbose parsed url   port: null,
+510 verbose parsed url   hostname: null,
+510 verbose parsed url   hash: null,
+510 verbose parsed url   search: null,
+510 verbose parsed url   query: null,
+510 verbose parsed url   pathname: '0.2.9',
+510 verbose parsed url   path: '0.2.9',
+510 verbose parsed url   href: '0.2.9' }
+511 verbose addNamed [ 'async', '0.2.9' ]
+512 verbose addNamed [ '0.2.9', '0.2.9' ]
+513 silly lockFile be62480b-async-0-2-9 async@0.2.9
+514 verbose lock async@0.2.9 /Users/iamceo/.npm/be62480b-async-0-2-9.lock
+515 silly addNameRange { name: 'grunt-contrib-coffee',
+515 silly addNameRange   range: '>=0.7.0- <0.8.0-',
+515 silly addNameRange   hasData: false }
+516 silly addNameRange { name: 'waterline', range: '>=0.9.4- <0.10.0-', hasData: false }
+517 silly exec git "config" "--get" "remote.origin.url"
+518 silly git,config,--get,remote.origin.url,/Users/iamceo/.npm/_git-remotes/git-github-com-Zolmeister-grunt-sails-linker-git-d5f0a8f5 spawning
+519 verbose git remote.origin.url git://github.com/Zolmeister/grunt-sails-linker.git
+520 silly exec git "fetch" "-a" "origin"
+521 silly git,fetch,-a,origin,/Users/iamceo/.npm/_git-remotes/git-github-com-Zolmeister-grunt-sails-linker-git-d5f0a8f5 spawning
+522 verbose url raw winston/0.7.1
+523 verbose url resolving [ 'https://registry.npmjs.org/', './winston/0.7.1' ]
+524 verbose url resolved https://registry.npmjs.org/winston/0.7.1
+525 info trying registry request attempt 1 at 19:37:21
+526 verbose etag "BDC2UWGIHRSDEPWASJYB6BQ25"
+527 http GET https://registry.npmjs.org/winston/0.7.1
+528 verbose url raw i18n/0.4.1
+529 verbose url resolving [ 'https://registry.npmjs.org/', './i18n/0.4.1' ]
+530 verbose url resolved https://registry.npmjs.org/i18n/0.4.1
+531 info trying registry request attempt 1 at 19:37:21
+532 verbose etag "4AI2V2DL37BDYWIM9899X8QKZ"
+533 http GET https://registry.npmjs.org/i18n/0.4.1
+534 verbose url raw fs-extra/0.5.0
+535 verbose url resolving [ 'https://registry.npmjs.org/', './fs-extra/0.5.0' ]
+536 verbose url resolved https://registry.npmjs.org/fs-extra/0.5.0
+537 info trying registry request attempt 1 at 19:37:21
+538 verbose etag "EKOL92ZUL71MKH00PKD8IVNNO"
+539 http GET https://registry.npmjs.org/fs-extra/0.5.0
+540 verbose url raw inflection/1.2.5
+541 verbose url resolving [ 'https://registry.npmjs.org/', './inflection/1.2.5' ]
+542 verbose url resolved https://registry.npmjs.org/inflection/1.2.5
+543 info trying registry request attempt 1 at 19:37:21
+544 verbose etag "DOMZNOZD187V0N2C3E8UVA366"
+545 http GET https://registry.npmjs.org/inflection/1.2.5
+546 verbose url raw glob/3.1.14
+547 verbose url resolving [ 'https://registry.npmjs.org/', './glob/3.1.14' ]
+548 verbose url resolved https://registry.npmjs.org/glob/3.1.14
+549 info trying registry request attempt 1 at 19:37:21
+550 verbose etag "FHUPEI84RTD0TUQHAT6GOLU3"
+551 http GET https://registry.npmjs.org/glob/3.1.14
+552 verbose url raw grunt-cli/0.1.9
+553 verbose url resolving [ 'https://registry.npmjs.org/', './grunt-cli/0.1.9' ]
+554 verbose url resolved https://registry.npmjs.org/grunt-cli/0.1.9
+555 info trying registry request attempt 1 at 19:37:21
+556 verbose etag "9WT3AX7UZ24J51HU6XT8XIBU9"
+557 http GET https://registry.npmjs.org/grunt-cli/0.1.9
+558 verbose url raw include-all/0.1.2
+559 verbose url resolving [ 'https://registry.npmjs.org/', './include-all/0.1.2' ]
+560 verbose url resolved https://registry.npmjs.org/include-all/0.1.2
+561 info trying registry request attempt 1 at 19:37:21
+562 verbose etag "CXBQPCPZEK2PQX39G083XF5L2"
+563 http GET https://registry.npmjs.org/include-all/0.1.2
+564 verbose url raw grunt-contrib-copy/0.4.1
+565 verbose url resolving [ 'https://registry.npmjs.org/', './grunt-contrib-copy/0.4.1' ]
+566 verbose url resolved https://registry.npmjs.org/grunt-contrib-copy/0.4.1
+567 info trying registry request attempt 1 at 19:37:21
+568 verbose etag "O5TILD718JALFGOGBIA6LAB1"
+569 http GET https://registry.npmjs.org/grunt-contrib-copy/0.4.1
+570 verbose url raw underscore.string/2.3.0
+571 verbose url resolving [ 'https://registry.npmjs.org/', './underscore.string/2.3.0' ]
+572 verbose url resolved https://registry.npmjs.org/underscore.string/2.3.0
+573 info trying registry request attempt 1 at 19:37:21
+574 verbose etag "82KONBUKGVFGLKPUIJ91QHEA4"
+575 http GET https://registry.npmjs.org/underscore.string/2.3.0
+576 verbose url raw node-uuid/1.4.0
+577 verbose url resolving [ 'https://registry.npmjs.org/', './node-uuid/1.4.0' ]
+578 verbose url resolved https://registry.npmjs.org/node-uuid/1.4.0
+579 info trying registry request attempt 1 at 19:37:21
+580 verbose etag "4DHO08MXIKSJAG3PBNLVJ8GWM"
+581 http GET https://registry.npmjs.org/node-uuid/1.4.0
+582 verbose url raw grunt-contrib-clean/0.4.1
+583 verbose url resolving [ 'https://registry.npmjs.org/', './grunt-contrib-clean/0.4.1' ]
+584 verbose url resolved https://registry.npmjs.org/grunt-contrib-clean/0.4.1
+585 info trying registry request attempt 1 at 19:37:21
+586 verbose etag "6KUGO55NVR6DEOUSLXDMA057B"
+587 http GET https://registry.npmjs.org/grunt-contrib-clean/0.4.1
+588 verbose url raw grunt-contrib-concat/0.3.0
+589 verbose url resolving [ 'https://registry.npmjs.org/',
+589 verbose url resolving   './grunt-contrib-concat/0.3.0' ]
+590 verbose url resolved https://registry.npmjs.org/grunt-contrib-concat/0.3.0
+591 info trying registry request attempt 1 at 19:37:21
+592 verbose etag "C47O1YATV81DIGHN0WAP1UHGC"
+593 http GET https://registry.npmjs.org/grunt-contrib-concat/0.3.0
+594 verbose url raw grunt-contrib-watch/0.4.4
+595 verbose url resolving [ 'https://registry.npmjs.org/', './grunt-contrib-watch/0.4.4' ]
+596 verbose url resolved https://registry.npmjs.org/grunt-contrib-watch/0.4.4
+597 info trying registry request attempt 1 at 19:37:21
+598 verbose etag "C9G2A6DJPJRUYBELVL0Y4E595"
+599 http GET https://registry.npmjs.org/grunt-contrib-watch/0.4.4
+600 verbose url raw grunt-contrib-uglify/0.2.2
+601 verbose url resolving [ 'https://registry.npmjs.org/',
+601 verbose url resolving   './grunt-contrib-uglify/0.2.2' ]
+602 verbose url resolved https://registry.npmjs.org/grunt-contrib-uglify/0.2.2
+603 info trying registry request attempt 1 at 19:37:21
+604 verbose etag "DAUV4YH0302VSLOIGBMQ9UAYK"
+605 http GET https://registry.npmjs.org/grunt-contrib-uglify/0.2.2
+606 verbose url raw grunt-contrib-cssmin/0.6.1
+607 verbose url resolving [ 'https://registry.npmjs.org/',
+607 verbose url resolving   './grunt-contrib-cssmin/0.6.1' ]
+608 verbose url resolved https://registry.npmjs.org/grunt-contrib-cssmin/0.6.1
+609 info trying registry request attempt 1 at 19:37:21
+610 verbose etag "D939KDHZYCVULYND5PIM8KLUE"
+611 http GET https://registry.npmjs.org/grunt-contrib-cssmin/0.6.1
+612 verbose url raw grunt-contrib-less/0.5.2
+613 verbose url resolving [ 'https://registry.npmjs.org/', './grunt-contrib-less/0.5.2' ]
+614 verbose url resolved https://registry.npmjs.org/grunt-contrib-less/0.5.2
+615 info trying registry request attempt 1 at 19:37:21
+616 verbose etag "7KRRIO6I6RK2M2LHK3JZB6MOK"
+617 http GET https://registry.npmjs.org/grunt-contrib-less/0.5.2
+618 verbose url raw pluralize/0.0.5
+619 verbose url resolving [ 'https://registry.npmjs.org/', './pluralize/0.0.5' ]
+620 verbose url resolved https://registry.npmjs.org/pluralize/0.0.5
+621 info trying registry request attempt 1 at 19:37:21
+622 verbose etag "CAY9S0O86RG7USK40RN9GL2EJ"
+623 http GET https://registry.npmjs.org/pluralize/0.0.5
+624 verbose url raw ejs-locals/1.0.2
+625 verbose url resolving [ 'https://registry.npmjs.org/', './ejs-locals/1.0.2' ]
+626 verbose url resolved https://registry.npmjs.org/ejs-locals/1.0.2
+627 info trying registry request attempt 1 at 19:37:21
+628 verbose etag "3JE5DZCQ3OZ6HNZTTOLNWEOLD"
+629 http GET https://registry.npmjs.org/ejs-locals/1.0.2
+630 verbose url raw grunt-contrib-coffee
+631 verbose url resolving [ 'https://registry.npmjs.org/', './grunt-contrib-coffee' ]
+632 verbose url resolved https://registry.npmjs.org/grunt-contrib-coffee
+633 info trying registry request attempt 1 at 19:37:21
+634 verbose etag "478HSK6SHCTWYMPZ8F2X441ZK"
+635 http GET https://registry.npmjs.org/grunt-contrib-coffee
+636 verbose url raw coffee-script/1.6.2
+637 verbose url resolving [ 'https://registry.npmjs.org/', './coffee-script/1.6.2' ]
+638 verbose url resolved https://registry.npmjs.org/coffee-script/1.6.2
+639 info trying registry request attempt 1 at 19:37:21
+640 verbose etag "2HZAL9J6YNYHX7K414IYU5MS"
+641 http GET https://registry.npmjs.org/coffee-script/1.6.2
+642 verbose url raw lodash/1.2.1
+643 verbose url resolving [ 'https://registry.npmjs.org/', './lodash/1.2.1' ]
+644 verbose url resolved https://registry.npmjs.org/lodash/1.2.1
+645 info trying registry request attempt 1 at 19:37:21
+646 verbose etag "CEINEZXE7PDSZXGJ5T5WVURX6"
+647 http GET https://registry.npmjs.org/lodash/1.2.1
+648 verbose url raw grunt-contrib-jst/0.5.0
+649 verbose url resolving [ 'https://registry.npmjs.org/', './grunt-contrib-jst/0.5.0' ]
+650 verbose url resolved https://registry.npmjs.org/grunt-contrib-jst/0.5.0
+651 info trying registry request attempt 1 at 19:37:21
+652 verbose etag "9FMH0B2E3UHFIFJ20BDTIY7ZT"
+653 http GET https://registry.npmjs.org/grunt-contrib-jst/0.5.0
+654 verbose url raw express/3.4.0
+655 verbose url resolving [ 'https://registry.npmjs.org/', './express/3.4.0' ]
+656 verbose url resolved https://registry.npmjs.org/express/3.4.0
+657 info trying registry request attempt 1 at 19:37:21
+658 verbose etag "CZYWLD4WBT3XQHHQ75YHZFAIM"
+659 http GET https://registry.npmjs.org/express/3.4.0
+660 verbose url raw connect-mongo/0.3.2
+661 verbose url resolving [ 'https://registry.npmjs.org/', './connect-mongo/0.3.2' ]
+662 verbose url resolved https://registry.npmjs.org/connect-mongo/0.3.2
+663 info trying registry request attempt 1 at 19:37:21
+664 verbose etag "AOH8AEPPDOR7XM8UTKG7U0N5R"
+665 http GET https://registry.npmjs.org/connect-mongo/0.3.2
+666 verbose url raw connect-redis/1.4.5
+667 verbose url resolving [ 'https://registry.npmjs.org/', './connect-redis/1.4.5' ]
+668 verbose url resolved https://registry.npmjs.org/connect-redis/1.4.5
+669 info trying registry request attempt 1 at 19:37:21
+670 verbose etag "B5SXYXPM8Y0ZG06XA6Y9PA3VN"
+671 http GET https://registry.npmjs.org/connect-redis/1.4.5
+672 verbose url raw waterline
+673 verbose url resolving [ 'https://registry.npmjs.org/', './waterline' ]
+674 verbose url resolved https://registry.npmjs.org/waterline
+675 info trying registry request attempt 1 at 19:37:21
+676 verbose etag "E4P161E46OTWQ8SFYL0UH7X46"
+677 http GET https://registry.npmjs.org/waterline
+678 verbose url raw connect-flash/0.1.1
+679 verbose url resolving [ 'https://registry.npmjs.org/', './connect-flash/0.1.1' ]
+680 verbose url resolved https://registry.npmjs.org/connect-flash/0.1.1
+681 info trying registry request attempt 1 at 19:37:21
+682 verbose etag "21A8G047HZF5SDSWQ371UXQ9A"
+683 http GET https://registry.npmjs.org/connect-flash/0.1.1
+684 verbose url raw socket.io/0.9.14
+685 verbose url resolving [ 'https://registry.npmjs.org/', './socket.io/0.9.14' ]
+686 verbose url resolved https://registry.npmjs.org/socket.io/0.9.14
+687 info trying registry request attempt 1 at 19:37:21
+688 verbose etag "DSF55RABJJRXIZ3PXJ5PQ9N4A"
+689 http GET https://registry.npmjs.org/socket.io/0.9.14
+690 verbose url raw async/0.2.9
+691 verbose url resolving [ 'https://registry.npmjs.org/', './async/0.2.9' ]
+692 verbose url resolved https://registry.npmjs.org/async/0.2.9
+693 info trying registry request attempt 1 at 19:37:21
+694 verbose etag "8I9XZYCF67J4501HYBMP2DHOR"
+695 http GET https://registry.npmjs.org/async/0.2.9
+696 error git fetch -a origin (git://github.com/Zolmeister/grunt-sails-linker.git) error: cannot open FETCH_HEAD: Permission denied
+697 silly lockFile d5f0a8f5-olmeister-grunt-sails-linker-git git://github.com/Zolmeister/grunt-sails-linker.git
+698 silly lockFile d5f0a8f5-olmeister-grunt-sails-linker-git git://github.com/Zolmeister/grunt-sails-linker.git
+699 verbose about to build /Users/iamceo/github/sails-base/test/node_modules/sails
+700 info /Users/iamceo/github/sails-base/test/node_modules/sails unbuild
+701 verbose from cache /Users/iamceo/github/sails-base/test/node_modules/sails/package.json
+702 info preuninstall sails@0.9.7
+703 info uninstall sails@0.9.7
+704 verbose true,/Users/iamceo/github/sails-base/test/node_modules,/Users/iamceo/github/sails-base/test/node_modules unbuild sails@0.9.7
+705 verbose /Users/iamceo/github/sails-base/test/node_modules/.bin,[object Object] binRoot
+706 info postuninstall sails@0.9.7
+707 error Error: `git "fetch" "-a" "origin"` failed with 1
+707 error     at ChildProcess.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/exec.js:59:20)
+707 error     at ChildProcess.EventEmitter.emit (events.js:98:17)
+707 error     at maybeClose (child_process.js:732:16)
+707 error     at Process.ChildProcess._handle.onexit (child_process.js:799:5)
+708 error If you need help, you may report this log at:
+708 error     <http://github.com/isaacs/npm/issues>
+708 error or email it to:
+708 error     <npm-@googlegroups.com>
+709 error System Darwin 12.5.0
+710 error command "node" "/usr/local/bin/npm" "install"
+711 error cwd /Users/iamceo/github/sails-base/test
+712 error node -v v0.10.3
+713 error npm -v 1.2.17
+714 verbose exit [ 1, true ]
